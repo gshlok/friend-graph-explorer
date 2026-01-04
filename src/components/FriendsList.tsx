@@ -5,21 +5,21 @@ export function FriendsList() {
   const { selectedUser, friends, selectUser } = useGraph();
 
   return (
-    <div className="glass-card rounded-lg p-6 fade-in">
+    <div className="glass-card rounded-lg p-6 animate-slide-in-left">
       <div className="flex items-center gap-3 mb-4">
-        <div className="p-2 rounded-lg bg-node-friend/10">
+        <div className="p-2 rounded-lg bg-node-friend/10 animate-scale-in">
           <Users className="w-5 h-5 text-node-friend" />
         </div>
         <h2 className="text-lg font-semibold">Direct Friends</h2>
         {selectedUser && (
-          <span className="ml-auto text-sm text-muted-foreground">
+          <span className="ml-auto text-sm text-muted-foreground animate-fade-in">
             {friends.length} connection{friends.length !== 1 ? 's' : ''}
           </span>
         )}
       </div>
       
       {!selectedUser ? (
-        <div className="flex flex-col items-center py-8 text-center">
+        <div className="flex flex-col items-center py-8 text-center animate-fade-in">
           <Users className="w-10 h-10 text-muted-foreground/40 mb-3" />
           <p className="text-muted-foreground text-sm">
             Select a user to view their friends
@@ -29,7 +29,7 @@ export function FriendsList() {
           </p>
         </div>
       ) : friends.length === 0 ? (
-        <div className="flex flex-col items-center py-8 text-center">
+        <div className="flex flex-col items-center py-8 text-center animate-fade-in">
           <UserX className="w-10 h-10 text-muted-foreground/40 mb-3" />
           <p className="text-muted-foreground text-sm">
             No friends yet
@@ -40,19 +40,20 @@ export function FriendsList() {
         </div>
       ) : (
         <ul className="space-y-2">
-          {friends.map((friend) => (
+          {friends.map((friend, index) => (
             <li
               key={friend.id}
               onClick={() => selectUser(friend.id)}
-              className="flex items-center gap-3 p-3 rounded-lg bg-secondary/30 hover:bg-secondary/50 transition-colors cursor-pointer group"
+              className="flex items-center gap-3 p-3 rounded-lg bg-secondary/30 hover:bg-secondary/50 transition-all duration-300 cursor-pointer group transform hover:scale-[1.02] hover:shadow-lg animate-slide-in-left"
+              style={{ animationDelay: `${index * 50}ms` }}
             >
-              <div className="w-8 h-8 rounded-full bg-node-friend/20 flex items-center justify-center group-hover:bg-node-friend/30 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-node-friend/20 flex items-center justify-center group-hover:bg-node-friend/30 transition-all duration-300 transform group-hover:scale-110">
                 <span className="text-sm font-medium text-node-friend">
                   {friend.name[0]}
                 </span>
               </div>
               <span className="font-medium flex-1">{friend.name}</span>
-              <span className="text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity">
+              <span className="text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Click to select
               </span>
             </li>

@@ -1,11 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import "@fontsource/plus-jakarta-sans/400.css";
 @import "@fontsource/plus-jakarta-sans/500.css";
 @import "@fontsource/plus-jakarta-sans/600.css";
 @import "@fontsource/plus-jakarta-sans/700.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   :root {
@@ -81,31 +81,151 @@
     @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-lg;
   }
   
-  .node-pulse {
-    animation: nodePulse 2s ease-in-out infinite;
+  /* Graph Node Animations */
+  .animate-pulse-ring {
+    animation: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
   
-  @keyframes nodePulse {
-    0%, 100% { transform: scale(1); opacity: 0.4; }
-    50% { transform: scale(1.15); opacity: 0.2; }
+  .animate-pulse-ring-delayed {
+    animation: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation-delay: 0.5s;
   }
   
-  .fade-in {
-    animation: fadeIn 0.3s ease-out forwards;
+  @keyframes pulseRing {
+    0%, 100% { 
+      transform: scale(1); 
+      opacity: 0.4; 
+    }
+    50% { 
+      transform: scale(1.2); 
+      opacity: 0.1; 
+    }
+  }
+  
+  .animate-highlight-ring {
+    animation: highlightRing 0.6s ease-out forwards;
+  }
+  
+  @keyframes highlightRing {
+    0% { 
+      transform: scale(0.8); 
+      opacity: 0; 
+    }
+    50% { 
+      opacity: 1; 
+    }
+    100% { 
+      transform: scale(1); 
+      opacity: 0.8; 
+    }
+  }
+  
+  .animate-rotate-dash {
+    animation: rotateDash 8s linear infinite;
+  }
+  
+  @keyframes rotateDash {
+    to { 
+      stroke-dashoffset: 32; 
+    }
+  }
+  
+  /* UI Component Animations */
+  .animate-slide-in-up {
+    animation: slideInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  
+  @keyframes slideInUp {
+    from { 
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  
+  .animate-slide-in-left {
+    animation: slideInLeft 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  
+  @keyframes slideInLeft {
+    from { 
+      opacity: 0; 
+      transform: translateX(-20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateX(0); 
+    }
+  }
+  
+  .animate-slide-in-right {
+    animation: slideInRight 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  
+  @keyframes slideInRight {
+    from { 
+      opacity: 0; 
+      transform: translateX(20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateX(0); 
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
   }
   
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { 
+      opacity: 0; 
+    }
+    to { 
+      opacity: 1; 
+    }
   }
   
-  .edge-glow {
-    animation: edgeGlow 0.6s ease-out;
+  .animate-fade-in-scale {
+    animation: fadeInScale 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
   
-  @keyframes edgeGlow {
-    0% { stroke-width: 2; filter: none; }
-    50% { stroke-width: 6; filter: drop-shadow(0 0 8px currentColor); }
-    100% { stroke-width: 2; filter: none; }
+  @keyframes fadeInScale {
+    from { 
+      opacity: 0; 
+      transform: scale(0.9); 
+    }
+    to { 
+      opacity: 1; 
+      transform: scale(1); 
+    }
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  
+  @keyframes scaleIn {
+    from { 
+      opacity: 0; 
+      transform: scale(0.8); 
+    }
+    to { 
+      opacity: 1; 
+      transform: scale(1); 
+    }
+  }
+  
+  /* Legacy fade-in for backwards compatibility */
+  .fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+  }
+  
+  /* Old node pulse - kept for backwards compatibility but updated */
+  .node-pulse {
+    animation: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 }

@@ -1,7 +1,7 @@
-import { useEffect, useState, useMemo, useCallback } from 'react';
+import { useEffect, useState, useMemo, useCallback, useRef } from 'react';
 import { useGraph } from '@/context/GraphContext';
 import { User } from '@/lib/graph';
-import { Eye, EyeOff, Focus, Maximize2 } from 'lucide-react';
+import { Focus, Maximize2 } from 'lucide-react';
 
 interface NodePosition {
   id: string;
@@ -13,12 +13,13 @@ interface NodePosition {
 
 const NODE_RADIUS = 24;
 const SELECTED_NODE_RADIUS = 32;
-const REPULSION = 3000;
-const ATTRACTION = 0.03;
+const REPULSION = 8000;
+const ATTRACTION = 0.02;
 const DAMPING = 0.85;
 const CENTER_PULL = 0.01;
 
 type ViewMode = 'full' | 'focused';
+type AnimationPhase = 'idle' | 'selecting' | 'traversing-friends' | 'traversing-recommendations';
 
 export function GraphVisualization() {
   const { users, edges, selectedUserId, friends, recommendations, selectUser } = useGraph();
@@ -26,7 +27,12 @@ export function GraphVisualization() {
   const [dimensions, setDimensions] = useState({ width: 800, height: 500 });
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<ViewMode>('full');
-  const [animatingEdges, setAnimatingEdges] = useState<Set<string>>(new Set());
+  const [animationPhase, setAnimationPhase] = useState<AnimationPhase>('idle');
+  const [highlightedNodes, setHighlightedNodes] = useState<Set<string>>(new Set());
+  const [highlightedEdges, setHighlightedEdges] = useState<Set<string>>(new Set());
+  const [edgeFlowOffsets, setEdgeFlowOffsets] = useState<Map<string, number>>(new Map());
+  const animationTimeoutRef = useRef<NodeJS.Timeout>();
+  const prevSelectedUserRef = useRef<string | null>(null);
 
   // Set of relevant node IDs based on selection
   const relevantNodeIds = useMemo(() => {
@@ -51,7 +57,7 @@ export function GraphVisualization() {
     });
   }, [selectedUserId, friends, recommendations, edges]);
 
-  // Initialize positions for new nodes
+  // Initialize positions for new nodes with spring-in animation
   useEffect(() => {
     setPositions((prev) => {
       const next = new Map(prev);
@@ -83,39 +89,95 @@ export function GraphVisualization() {
     });
   }, [users, dimensions]);
 
-  // Animate edges when user is selected
+  // Animate edge flow offsets continuously
   useEffect(() => {
-    if (!selectedUserId) {
-      setAnimatingEdges(new Set());
+    const interval = setInterval(() => {
+      setEdgeFlowOffsets(prev => {
+        const next = new Map(prev);
+        highlightedEdges.forEach(edgeKey => {
+          const current = next.get(edgeKey) || 0;
+          next.set(edgeKey, (current + 2) % 20);
+        });
+        return next;
+      });
+    }, 50);
+
+    return () => clearInterval(interval);
+  }, [highlightedEdges]);
+
+  // Orchestrated traversal animation when user is selected
+  useEffect(() => {
+    if (animationTimeoutRef.current) {
+      clearTimeout(animationTimeoutRef.current);
+    }
+
+    if (!selectedUserId || prevSelectedUserRef.current === selectedUserId) {
+      prevSelectedUserRef.current = selectedUserId;
       return;
     }
 
-    // Animate edges sequentially: first to friends, then to recommendations
-    const friendEdges = edges
-      .filter(e => e.from === selectedUserId || e.to === selectedUserId)
-      .map(e => `${e.from}-${e.to}`);
-    
-    setAnimatingEdges(new Set(friendEdges));
+    prevSelectedUserRef.current = selectedUserId;
 
-    const timeout = setTimeout(() => {
-      const recommendedEdges = edges
-        .filter(e => {
-          const isFriendToRec = 
-            (friends.some(f => f.id === e.from) && recommendations.some(r => r.user.id === e.to)) ||
-            (friends.some(f => f.id === e.to) && recommendations.some(r => r.user.id === e.from));
-          return isFriendToRec;
-        })
+    // Phase 1: Selecting (pulse selected node)
+    setAnimationPhase('selecting');
+    setHighlightedNodes(new Set([selectedUserId]));
+    setHighlightedEdges(new Set());
+
+    // Phase 2: Traverse to direct friends (after 400ms)
+    animationTimeoutRef.current = setTimeout(() => {
+      setAnimationPhase('traversing-friends');
+      
+      const friendEdges = edges
+        .filter(e => e.from === selectedUserId || e.to === selectedUserId)
         .map(e => `${e.from}-${e.to}`);
       
-      setAnimatingEdges(new Set([...friendEdges, ...recommendedEdges]));
+      setHighlightedEdges(new Set(friendEdges));
+      
+      // Highlight friends (after edge animation starts)
+      setTimeout(() => {
+        const friendIds = friends.map(f => f.id);
+        setHighlightedNodes(new Set([selectedUserId, ...friendIds]));
+      }, 300);
 
-      setTimeout(() => setAnimatingEdges(new Set()), 600);
-    }, 300);
+      // Phase 3: Traverse to recommendations (after 700ms from Phase 2 start)
+      animationTimeoutRef.current = setTimeout(() => {
+        if (recommendations.length > 0) {
+          setAnimationPhase('traversing-recommendations');
+          
+          const recommendedEdges = edges
+            .filter(e => {
+              const isFriendToRec = 
+                (friends.some(f => f.id === e.from) && recommendations.some(r => r.user.id === e.to)) ||
+                (friends.some(f => f.id === e.to) && recommendations.some(r => r.user.id === e.from));
+              return isFriendToRec;
+            })
+            .map(e => `${e.from}-${e.to}`);
+          
+          setHighlightedEdges(new Set([...friendEdges, ...recommendedEdges]));
+          
+          // Highlight recommendations
+          setTimeout(() => {
+            const recIds = recommendations.map(r => r.user.id);
+            setHighlightedNodes(new Set([selectedUserId, ...friends.map(f => f.id), ...recIds]));
+          }, 300);
+        }
 
-    return () => clearTimeout(timeout);
+        // Phase 4: Return to idle (after 1000ms)
+        animationTimeoutRef.current = setTimeout(() => {
+          setAnimationPhase('idle');
+          setHighlightedEdges(new Set());
+        }, 1000);
+      }, 700);
+    }, 400);
+
+    return () => {
+      if (animationTimeoutRef.current) {
+        clearTimeout(animationTimeoutRef.current);
+      }
+    };
   }, [selectedUserId, friends, recommendations, edges]);
 
-  // Force-directed layout simulation
+  // Force-directed layout simulation with smooth spring animations
   useEffect(() => {
     if (positions.size === 0) return;
 
@@ -152,7 +214,7 @@ export function GraphVisualization() {
           }
         }
 
-        // Attraction along edges
+        // Attraction along edges (spring effect)
         edges.forEach(({ from, to }) => {
           const nodeA = next.get(from);
           const nodeB = next.get(to);
@@ -169,7 +231,7 @@ export function GraphVisualization() {
           }
         });
 
-        // Pull selected user toward center
+        // Pull selected user toward center with stronger force
         if (selectedUserId) {
           const selectedNode = next.get(selectedUserId);
           if (selectedNode) {
@@ -178,7 +240,7 @@ export function GraphVisualization() {
           }
         }
 
-        // Center pull and update positions
+        // Center pull and update positions with smooth scale animation
         nodes.forEach((node) => {
           node.vx += (centerX - node.x) * CENTER_PULL;
           node.vy += (centerY - node.y) * CENTER_PULL;
@@ -202,11 +264,12 @@ export function GraphVisualization() {
     return () => clearInterval(interval);
   }, [edges, dimensions, positions.size, selectedUserId]);
 
-  // Get node visibility/opacity
+  // Get node visibility/opacity with smooth transitions
   const getNodeOpacity = useCallback((userId: string) => {
     if (!selectedUserId || viewMode === 'full') return 1;
+    if (animationPhase !== 'idle' && !highlightedNodes.has(userId)) return 0.08;
     return relevantNodeIds.has(userId) ? 1 : 0.15;
-  }, [selectedUserId, viewMode, relevantNodeIds]);
+  }, [selectedUserId, viewMode, relevantNodeIds, animationPhase, highlightedNodes]);
 
   // Get node color based on its relationship to selected user
   const getNodeColor = useCallback((userId: string) => {
@@ -218,34 +281,45 @@ export function GraphVisualization() {
 
   // Get node radius
   const getNodeRadius = useCallback((userId: string) => {
-    if (userId === selectedUserId) return SELECTED_NODE_RADIUS;
-    return NODE_RADIUS;
+    return userId === selectedUserId ? SELECTED_NODE_RADIUS : NODE_RADIUS;
   }, [selectedUserId]);
 
   // Get edge visibility
   const getEdgeOpacity = useCallback((from: string, to: string) => {
+    const edgeKey = `${from}-${to}`;
+    const edgeKeyReverse = `${to}-${from}`;
+    
+    if (highlightedEdges.has(edgeKey) || highlightedEdges.has(edgeKeyReverse)) {
+      return 1;
+    }
+    
     if (!selectedUserId) return 0.6;
     if (viewMode === 'focused') {
       const isRelevant = relevantEdges.some(e => 
         (e.from === from && e.to === to) || (e.from === to && e.to === from)
       );
-      return isRelevant ? 1 : 0.08;
+      return isRelevant ? 0.8 : 0.05;
     }
-    if (from === selectedUserId || to === selectedUserId) return 1;
-    // Friend to recommendation edge
+    if (from === selectedUserId || to === selectedUserId) return 0.9;
     const isFriendToRec = 
       (friends.some(f => f.id === from) && recommendations.some(r => r.user.id === to)) ||
       (friends.some(f => f.id === to) && recommendations.some(r => r.user.id === from));
-    if (isFriendToRec) return 0.7;
-    return 0.2;
-  }, [selectedUserId, viewMode, friends, recommendations, relevantEdges]);
+    if (isFriendToRec) return 0.6;
+    return 0.15;
+  }, [selectedUserId, viewMode, friends, recommendations, relevantEdges, highlightedEdges]);
 
   // Get edge stroke width
   const getEdgeStrokeWidth = useCallback((from: string, to: string) => {
+    const edgeKey = `${from}-${to}`;
+    const edgeKeyReverse = `${to}-${from}`;
+    
+    if (highlightedEdges.has(edgeKey) || highlightedEdges.has(edgeKeyReverse)) {
+      return 3.5;
+    }
     if (!selectedUserId) return 1.5;
     if (from === selectedUserId || to === selectedUserId) return 3;
     return 1.5;
-  }, [selectedUserId]);
+  }, [selectedUserId, highlightedEdges]);
 
   // Get edge stroke dash
   const getEdgeDash = useCallback((from: string, to: string) => {
@@ -258,6 +332,12 @@ export function GraphVisualization() {
 
   // Get edge color
   const getEdgeColor = useCallback((from: string, to: string) => {
+    const edgeKey = `${from}-${to}`;
+    const edgeKeyReverse = `${to}-${from}`;
+    
+    if (highlightedEdges.has(edgeKey) || highlightedEdges.has(edgeKeyReverse)) {
+      return 'hsl(var(--primary))';
+    }
     if (!selectedUserId) return 'hsl(var(--edge))';
     if (from === selectedUserId || to === selectedUserId) return 'hsl(var(--edge-highlight))';
     const isFriendToRec = 
@@ -265,7 +345,7 @@ export function GraphVisualization() {
       (friends.some(f => f.id === to) && recommendations.some(r => r.user.id === from));
     if (isFriendToRec) return 'hsl(var(--accent))';
     return 'hsl(var(--edge))';
-  }, [selectedUserId, friends, recommendations]);
+  }, [selectedUserId, friends, recommendations, highlightedEdges]);
 
   const userMap = useMemo(() => {
     const map = new Map<string, User>();
@@ -273,15 +353,24 @@ export function GraphVisualization() {
     return map;
   }, [users]);
 
-  // Check if edge should be animated
-  const isEdgeAnimating = useCallback((from: string, to: string) => {
-    return animatingEdges.has(`${from}-${to}`) || animatingEdges.has(`${to}-${from}`);
-  }, [animatingEdges]);
+  // Check if edge should have flow animation
+  const isEdgeFlowing = useCallback((from: string, to: string) => {
+    const edgeKey = `${from}-${to}`;
+    const edgeKeyReverse = `${to}-${from}`;
+    return highlightedEdges.has(edgeKey) || highlightedEdges.has(edgeKeyReverse);
+  }, [highlightedEdges]);
+
+  // Get edge flow offset
+  const getEdgeFlowOffset = useCallback((from: string, to: string) => {
+    const edgeKey = `${from}-${to}`;
+    const edgeKeyReverse = `${to}-${from}`;
+    return edgeFlowOffsets.get(edgeKey) || edgeFlowOffsets.get(edgeKeyReverse) || 0;
+  }, [edgeFlowOffsets]);
 
   return (
-    <div className="glass-card rounded-lg p-6 fade-in">
+    <div className="glass-card rounded-lg p-6 animate-slide-in-up">
       <div className="flex items-center gap-3 mb-4">
-        <div className="p-2 rounded-lg bg-primary/10">
+        <div className="p-2 rounded-lg bg-primary/10 animate-scale-in">
           <svg className="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <circle cx="12" cy="12" r="3"/>
             <circle cx="5" cy="6" r="2"/>
@@ -300,9 +389,9 @@ export function GraphVisualization() {
         <div className="ml-auto flex gap-1">
           <button
             onClick={() => setViewMode('full')}
-            className={`p-2 rounded-lg transition-colors ${
+            className={`p-2 rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 ${
               viewMode === 'full' 
-                ? 'bg-primary/20 text-primary' 
+                ? 'bg-primary/20 text-primary shadow-lg shadow-primary/20' 
                 : 'bg-secondary/30 text-muted-foreground hover:bg-secondary/50'
             }`}
             title="Full Network"
@@ -311,9 +400,9 @@ export function GraphVisualization() {
           </button>
           <button
             onClick={() => setViewMode('focused')}
-            className={`p-2 rounded-lg transition-colors ${
+            className={`p-2 rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 ${
               viewMode === 'focused' 
-                ? 'bg-primary/20 text-primary' 
+                ? 'bg-primary/20 text-primary shadow-lg shadow-primary/20' 
                 : 'bg-secondary/30 text-muted-foreground hover:bg-secondary/50'
             }`}
             title="Focused View"
@@ -325,25 +414,25 @@ export function GraphVisualization() {
       
       {/* Legend */}
       <div className="flex flex-wrap gap-4 mb-4 text-sm">
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 rounded-full border-2 border-foreground" style={{ backgroundColor: 'hsl(var(--node-selected))' }} />
+        <div className="flex items-center gap-2 animate-fade-in">
+          <div className="w-4 h-4 rounded-full border-2 border-foreground transition-transform hover:scale-110" style={{ backgroundColor: 'hsl(var(--node-selected))' }} />
           <span className="text-muted-foreground">Selected</span>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full" style={{ backgroundColor: 'hsl(var(--node-friend))' }} />
+        <div className="flex items-center gap-2 animate-fade-in" style={{ animationDelay: '50ms' }}>
+          <div className="w-3 h-3 rounded-full transition-transform hover:scale-110" style={{ backgroundColor: 'hsl(var(--node-friend))' }} />
           <span className="text-muted-foreground">Friend</span>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full border-2 border-dashed" style={{ borderColor: 'hsl(var(--node-recommended))', backgroundColor: 'hsl(var(--node-recommended) / 0.3)' }} />
+        <div className="flex items-center gap-2 animate-fade-in" style={{ animationDelay: '100ms' }}>
+          <div className="w-3 h-3 rounded-full border-2 border-dashed transition-transform hover:scale-110" style={{ borderColor: 'hsl(var(--node-recommended))', backgroundColor: 'hsl(var(--node-recommended) / 0.3)' }} />
           <span className="text-muted-foreground">Recommended</span>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full opacity-40" style={{ backgroundColor: 'hsl(var(--node))' }} />
+        <div className="flex items-center gap-2 animate-fade-in" style={{ animationDelay: '150ms' }}>
+          <div className="w-3 h-3 rounded-full opacity-40 transition-transform hover:scale-110" style={{ backgroundColor: 'hsl(var(--node))' }} />
           <span className="text-muted-foreground">Other</span>
         </div>
       </div>
 
-      <div className="relative rounded-lg overflow-hidden bg-background/50 border border-border/30">
+      <div className="relative rounded-lg overflow-hidden bg-background/50 border border-border/30 shadow-inner">
         <svg
           width="100%"
           height={dimensions.height}
@@ -356,11 +445,34 @@ export function GraphVisualization() {
               <path d="M 40 0 L 0 0 0 40" fill="none" stroke="hsl(var(--border))" strokeWidth="0.5" opacity="0.3"/>
             </pattern>
             
-            {/* Glow filter for animated edges */}
+            {/* Glow filter for selected/hovered nodes */}
             <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+              <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+
+            {/* Strong glow for active edges */}
+            <filter id="edge-glow" x="-50%" y="-50%" width="200%" height="200%">
               <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
               <feMerge>
                 <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+
+            {/* Shadow filter for depth */}
+            <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+              <feOffset dx="0" dy="2" result="offsetblur"/>
+              <feComponentTransfer>
+                <feFuncA type="linear" slope="0.3"/>
+              </feComponentTransfer>
+              <feMerge>
+                <feMergeNode/>
                 <feMergeNode in="SourceGraphic"/>
               </feMerge>
             </filter>
@@ -373,22 +485,29 @@ export function GraphVisualization() {
             const posTo = positions.get(to);
             if (!posFrom || !posTo) return null;
             
-            const isAnimating = isEdgeAnimating(from, to);
+            const isFlowing = isEdgeFlowing(from, to);
+            const flowOffset = getEdgeFlowOffset(from, to);
+            const edgeKey = `${from}-${to}`;
             
             return (
-              <line
-                key={`${from}-${to}`}
-                x1={posFrom.x}
-                y1={posFrom.y}
-                x2={posTo.x}
-                y2={posTo.y}
-                stroke={getEdgeColor(from, to)}
-                strokeWidth={getEdgeStrokeWidth(from, to)}
-                strokeDasharray={getEdgeDash(from, to)}
-                opacity={getEdgeOpacity(from, to)}
-                filter={isAnimating ? 'url(#glow)' : 'none'}
-                className="transition-all duration-300"
-              />
+              <g key={edgeKey}>
+                <line
+                  x1={posFrom.x}
+                  y1={posFrom.y}
+                  x2={posTo.x}
+                  y2={posTo.y}
+                  stroke={getEdgeColor(from, to)}
+                  strokeWidth={getEdgeStrokeWidth(from, to)}
+                  strokeDasharray={getEdgeDash(from, to)}
+                  strokeDashoffset={isFlowing ? flowOffset : 0}
+                  opacity={getEdgeOpacity(from, to)}
+                  filter={isFlowing ? 'url(#edge-glow)' : 'none'}
+                  className="transition-all duration-500 ease-out"
+                  style={{
+                    strokeLinecap: 'round',
+                  }}
+                />
+              </g>
             );
           })}
 
@@ -401,6 +520,7 @@ export function GraphVisualization() {
             const isFriend = friends.some(f => f.id === user.id);
             const isRecommended = recommendations.some(r => r.user.id === user.id);
             const isHovered = user.id === hoveredNode;
+            const isHighlighted = highlightedNodes.has(user.id);
             const nodeColor = getNodeColor(user.id);
             const nodeRadius = getNodeRadius(user.id);
             const nodeOpacity = getNodeOpacity(user.id);
@@ -412,28 +532,43 @@ export function GraphVisualization() {
                 onClick={() => selectUser(user.id)}
                 onMouseEnter={() => setHoveredNode(user.id)}
                 onMouseLeave={() => setHoveredNode(null)}
-                className="cursor-pointer"
+                className="cursor-pointer transition-all duration-300"
                 opacity={nodeOpacity}
+                style={{ 
+                  transformOrigin: 'center',
+                }}
               >
                 {/* Pulsing ring for selected node */}
                 {isSelected && (
-                  <circle
-                    r={nodeRadius + 10}
-                    fill="none"
-                    stroke={nodeColor}
-                    strokeWidth={2}
-                    opacity={0.4}
-                    className="node-pulse"
-                  />
+                  <>
+                    <circle
+                      r={nodeRadius + 14}
+                      fill="none"
+                      stroke={nodeColor}
+                      strokeWidth={2}
+                      opacity={0.4}
+                      className="animate-pulse-ring"
+                    />
+                    <circle
+                      r={nodeRadius + 8}
+                      fill="none"
+                      stroke={nodeColor}
+                      strokeWidth={2}
+                      opacity={0.6}
+                      className="animate-pulse-ring-delayed"
+                    />
+                  </>
                 )}
                 
-                {/* Glow effect */}
-                {(isSelected || isHovered) && (
+                {/* Animated highlight ring during traversal */}
+                {isHighlighted && animationPhase !== 'idle' && (
                   <circle
-                    r={nodeRadius + 8}
-                    fill={nodeColor}
-                    opacity={0.25}
-                    className="transition-all duration-300"
+                    r={nodeRadius + 6}
+                    fill="none"
+                    stroke={nodeColor}
+                    strokeWidth={2.5}
+                    opacity={0.8}
+                    className="animate-highlight-ring"
                   />
                 )}
                 
@@ -446,6 +581,7 @@ export function GraphVisualization() {
                     strokeWidth={2}
                     strokeDasharray="4,4"
                     opacity={0.7}
+                    className="animate-rotate-dash"
                   />
                 )}
                 
@@ -473,9 +609,9 @@ export function GraphVisualization() {
                   {user.name.slice(0, 2)}
                 </text>
                 
-                {/* Full name on hover */}
+                {/* Full name on hover with animated background */}
                 {isHovered && (
-                  <g>
+                  <g className="animate-fade-in-scale">
                     <rect
                       x={-user.name.length * 4 - 8}
                       y={nodeRadius + 8}
@@ -485,6 +621,7 @@ export function GraphVisualization() {
                       fill="hsl(var(--card))"
                       stroke="hsl(var(--border))"
                       strokeWidth={1}
+                      filter="url(#shadow)"
                     />
                     <text
                       textAnchor="middle"
@@ -504,7 +641,7 @@ export function GraphVisualization() {
         </svg>
       </div>
       
-      <p className="text-muted-foreground text-xs mt-3">
+      <p className="text-muted-foreground text-xs mt-3 animate-fade-in">
         Click any node to select it. Use {viewMode === 'full' ? 'Focused' : 'Full Network'} mode for {viewMode === 'full' ? 'emphasis on selected connections' : 'complete graph visibility'}.
       </p>
     </div>

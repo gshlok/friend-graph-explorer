@@ -6,9 +6,10 @@ import { AddFriendshipForm } from '@/components/AddFriendshipForm';
 import { FriendsList } from '@/components/FriendsList';
 import { Recommendations } from '@/components/Recommendations';
 import { GraphVisualization } from '@/components/GraphVisualization';
-import { AdjacencyListView } from '@/components/AdjacencyListView';
 import { StatsBar } from '@/components/StatsBar';
-import { Network } from 'lucide-react';
+import { Network, Grid3x3 } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 
 const Index = () => {
   return (
@@ -17,16 +18,24 @@ const Index = () => {
         {/* Header */}
         <header className="border-b border-border/50 bg-card/30 backdrop-blur-sm sticky top-0 z-10">
           <div className="container py-4">
-            <div className="flex items-center gap-3">
-              <div className="p-2 rounded-lg bg-primary/10">
-                <Network className="w-6 h-6 text-primary" />
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Network className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h1 className="text-xl font-bold">Social Network Graph</h1>
+                  <p className="text-sm text-muted-foreground">
+                    Friend Recommendation System using Graph Data Structures
+                  </p>
+                </div>
               </div>
-              <div>
-                <h1 className="text-xl font-bold">Social Network Graph</h1>
-                <p className="text-sm text-muted-foreground">
-                  Friend Recommendation System using Graph Data Structures
-                </p>
-              </div>
+              <Link to="/adjacency-matrix">
+                <Button variant="outline" className="gap-2">
+                  <Grid3x3 className="w-4 h-4" />
+                  View Matrix
+                </Button>
+              </Link>
             </div>
           </div>
         </header>
@@ -37,8 +46,8 @@ const Index = () => {
             <StatsBar />
           </section>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Left Column - Controls (reordered by cognitive importance) */}
+          <div className="grid lg:grid-cols-[350px_1fr] gap-8">
+            {/* Left Sidebar - Controls */}
             <div className="space-y-6">
               {/* 1. Select User - Primary action */}
               <UserSelector />
@@ -46,26 +55,20 @@ const Index = () => {
               {/* 2. Active User Card - Context reinforcement */}
               <ActiveUserCard />
               
-              {/* 3. Add Forms - Modifications */}
+              {/* 3. Direct Friends - Distance 1 */}
+              <FriendsList />
+              
+              {/* 4. Recommendations - Distance 2 */}
+              <Recommendations />
+              
+              {/* 5. Add Forms - Modifications */}
               <AddUserForm />
               <AddFriendshipForm />
             </div>
 
-            {/* Middle Column - Friends & Recommendations */}
+            {/* Main Content - Graph Visualization (Bigger) */}
             <div className="space-y-6">
-              {/* Direct Friends first - Distance 1 */}
-              <FriendsList />
-              
-              {/* Recommendations - Distance 2 */}
-              <Recommendations />
-            </div>
-
-            {/* Right Column - Graph Visualization */}
-            <div className="lg:col-span-1 space-y-6">
               <GraphVisualization />
-              
-              {/* Adjacency List - Technical representation */}
-              <AdjacencyListView />
             </div>
           </div>
 
@@ -77,7 +80,7 @@ const Index = () => {
                 <h3 className="font-medium text-primary mb-2">Graph Structure</h3>
                 <p className="text-muted-foreground">
                   Users are represented as nodes, friendships as undirected edges. 
-                  The network uses an adjacency list for efficient traversal.
+                  The network uses an adjacency matrix for visual representation.
                 </p>
               </div>
               <div>
