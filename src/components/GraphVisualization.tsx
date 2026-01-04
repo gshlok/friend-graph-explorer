@@ -1,7 +1,6 @@
 import { useEffect, useState, useMemo, useCallback, useRef } from 'react';
 import { useGraph } from '@/context/GraphContext';
 import { User } from '@/lib/graph';
-import { Focus, Maximize2 } from 'lucide-react';
 
 interface NodePosition {
   id: string;
@@ -26,7 +25,7 @@ export function GraphVisualization() {
   const [positions, setPositions] = useState<Map<string, NodePosition>>(new Map());
   const [dimensions, setDimensions] = useState({ width: 800, height: 700 });
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
-  const [viewMode, setViewMode] = useState<ViewMode>('full');
+  const [viewMode] = useState<ViewMode>('focused');
   const [animationPhase, setAnimationPhase] = useState<AnimationPhase>('idle');
   const [highlightedNodes, setHighlightedNodes] = useState<Set<string>>(new Set());
   const [highlightedEdges, setHighlightedEdges] = useState<Set<string>>(new Set());
@@ -384,32 +383,6 @@ export function GraphVisualization() {
           </svg>
         </div>
         <h2 className="text-lg font-semibold">Network Graph</h2>
-        
-        {/* View Mode Toggle */}
-        <div className="ml-auto flex gap-1">
-          <button
-            onClick={() => setViewMode('full')}
-            className={`p-2 rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 ${
-              viewMode === 'full' 
-                ? 'bg-primary/20 text-primary shadow-lg shadow-primary/20' 
-                : 'bg-secondary/30 text-muted-foreground hover:bg-secondary/50'
-            }`}
-            title="Full Network"
-          >
-            <Maximize2 className="w-4 h-4" />
-          </button>
-          <button
-            onClick={() => setViewMode('focused')}
-            className={`p-2 rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 ${
-              viewMode === 'focused' 
-                ? 'bg-primary/20 text-primary shadow-lg shadow-primary/20' 
-                : 'bg-secondary/30 text-muted-foreground hover:bg-secondary/50'
-            }`}
-            title="Focused View"
-          >
-            <Focus className="w-4 h-4" />
-          </button>
-        </div>
       </div>
       
       {/* Legend */}
@@ -642,7 +615,7 @@ export function GraphVisualization() {
       </div>
       
       <p className="text-muted-foreground text-xs mt-3 animate-fade-in">
-        Click any node to select it. Use {viewMode === 'full' ? 'Focused' : 'Full Network'} mode for {viewMode === 'full' ? 'emphasis on selected connections' : 'complete graph visibility'}.
+        Click any node to select it and view their connections.
       </p>
     </div>
   );

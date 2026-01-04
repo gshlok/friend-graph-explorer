@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { useGraph } from '@/context/GraphContext';
-import { Sparkles, Route, ChevronDown, ChevronUp, Users } from 'lucide-react';
+import { Sparkles, Route, ChevronDown, ChevronUp, Users, UserPlus } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 export function Recommendations() {
-  const { selectedUser, recommendations } = useGraph();
+  const { selectedUser, recommendations, addFriendship } = useGraph();
   const [showPaths, setShowPaths] = useState(false);
+  const { toast } = useToast();
 
   return (
     <div className="glass-card rounded-lg p-6 animate-slide-in-right">
@@ -76,6 +78,29 @@ export function Recommendations() {
                       )}
                     </p>
                   </div>
+                  <button
+                    onClick={() => {
+                      if (selectedUser) {
+                        const success = addFriendship(selectedUser.id, rec.user.id);
+                        if (success) {
+                          toast({
+                            title: "Friendship added!",
+                            description: `${selectedUser.name} and ${rec.user.name} are now friends.`,
+                          });
+                        } else {
+                          toast({
+                            title: "Already friends",
+                            description: `${selectedUser.name} and ${rec.user.name} are already connected.`,
+                            variant: "destructive",
+                          });
+                        }
+                      }
+                    }}
+                    className="p-2 rounded-lg bg-accent/20 hover:bg-accent/30 text-accent transition-all duration-300 hover:scale-110 active:scale-95"
+                    title="Add as friend"
+                  >
+                    <UserPlus className="w-4 h-4" />
+                  </button>
                 </div>
 
                 {/* Mutual Friends Chips (when more than 2) */}
