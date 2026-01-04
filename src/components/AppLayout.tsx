@@ -9,7 +9,7 @@ interface AppLayoutProps {
 
 const navigation = [
   { name: 'Home', href: '/', icon: Home },
-  { name: 'Add User', href: '/add-user', icon: UserPlus },
+  { name: 'Add User/Friend', href: '/add-user', icon: UserPlus },
   { name: 'Adjacency Matrix', href: '/adjacency-matrix', icon: Grid3x3 },
   { name: 'How It Works', href: '/how-it-works', icon: BookOpen },
 ];

@@ -13,7 +13,7 @@ interface NodePosition {
 
 const NODE_RADIUS = 24;
 const SELECTED_NODE_RADIUS = 32;
-const REPULSION = 8000;
+const REPULSION = 3000;
 const ATTRACTION = 0.02;
 const DAMPING = 0.85;
 const CENTER_PULL = 0.01;
@@ -57,17 +57,20 @@ export function GraphVisualization() {
     });
   }, [selectedUserId, friends, recommendations, edges]);
 
-  // Initialize positions for new nodes with spring-in animation
+  // Initialize positions for new nodes
   useEffect(() => {
     setPositions((prev) => {
       const next = new Map(prev);
       const centerX = dimensions.width / 2;
       const centerY = dimensions.height / 2;
       
-      users.forEach((user) => {
+      users.forEach((user, index) => {
         if (!next.has(user.id)) {
-          const angle = Math.random() * Math.PI * 2;
-          const radius = 100 + Math.random() * 100;
+          // Distribute nodes in a circular layout
+          const totalUsers = users.length;
+          const angle = (index / totalUsers) * Math.PI * 2;
+          const radius = Math.min(dimensions.width, dimensions.height) * 0.3;
+          
           next.set(user.id, {
             id: user.id,
             x: centerX + Math.cos(angle) * radius,
@@ -176,93 +179,6 @@ export function GraphVisualization() {
       }
     };
   }, [selectedUserId, friends, recommendations, edges]);
-
-  // Force-directed layout simulation with smooth spring animations
-  useEffect(() => {
-    if (positions.size === 0) return;
-
-    const interval = setInterval(() => {
-      setPositions((prev) => {
-        const next = new Map<string, NodePosition>();
-        const centerX = dimensions.width / 2;
-        const centerY = dimensions.height / 2;
-
-        // Copy current positions
-        prev.forEach((node, id) => {
-          next.set(id, { ...node });
-        });
-
-        // Apply forces
-        const nodes = Array.from(next.values());
-
-        // Repulsion between all nodes
-        for (let i = 0; i < nodes.length; i++) {
-          for (let j = i + 1; j < nodes.length; j++) {
-            const nodeA = nodes[i];
-            const nodeB = nodes[j];
-            const dx = nodeB.x - nodeA.x;
-            const dy = nodeB.y - nodeA.y;
-            const dist = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
-            const force = REPULSION / (dist * dist);
-            const fx = (dx / dist) * force;
-            const fy = (dy / dist) * force;
-
-            nodeA.vx -= fx;
-            nodeA.vy -= fy;
-            nodeB.vx += fx;
-            nodeB.vy += fy;
-          }
-        }
-
-        // Attraction along edges (spring effect)
-        edges.forEach(({ from, to }) => {
-          const nodeA = next.get(from);
-          const nodeB = next.get(to);
-          if (nodeA && nodeB) {
-            const dx = nodeB.x - nodeA.x;
-            const dy = nodeB.y - nodeA.y;
-            const dist = Math.sqrt(dx * dx + dy * dy);
-            const force = dist * ATTRACTION;
-
-            nodeA.vx += (dx / dist) * force;
-            nodeA.vy += (dy / dist) * force;
-            nodeB.vx -= (dx / dist) * force;
-            nodeB.vy -= (dy / dist) * force;
-          }
-        });
-
-        // Pull selected user toward center with stronger force
-        if (selectedUserId) {
-          const selectedNode = next.get(selectedUserId);
-          if (selectedNode) {
-            selectedNode.vx += (centerX - selectedNode.x) * CENTER_PULL * 3;
-            selectedNode.vy += (centerY - selectedNode.y) * CENTER_PULL * 3;
-          }
-        }
-
-        // Center pull and update positions with smooth scale animation
-        nodes.forEach((node) => {
-          node.vx += (centerX - node.x) * CENTER_PULL;
-          node.vy += (centerY - node.y) * CENTER_PULL;
-
-          node.vx *= DAMPING;
-          node.vy *= DAMPING;
-
-          node.x += node.vx;
-          node.y += node.vy;
-
-          // Keep within bounds
-          const padding = SELECTED_NODE_RADIUS + 20;
-          node.x = Math.max(padding, Math.min(dimensions.width - padding, node.x));
-          node.y = Math.max(padding, Math.min(dimensions.height - padding, node.y));
-        });
-
-        return next;
-      });
-    }, 16);
-
-    return () => clearInterval(interval);
-  }, [edges, dimensions, positions.size, selectedUserId]);
 
   // Get node visibility/opacity with smooth transitions
   const getNodeOpacity = useCallback((userId: string) => {

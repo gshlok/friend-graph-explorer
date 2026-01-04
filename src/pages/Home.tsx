@@ -1,5 +1,4 @@
 import { UserSelector } from '@/components/UserSelector';
-import { ActiveUserCard } from '@/components/ActiveUserCard';
 import { FriendsList } from '@/components/FriendsList';
 import { Recommendations } from '@/components/Recommendations';
 import { GraphVisualization } from '@/components/GraphVisualization';
@@ -13,9 +12,6 @@ const Home = () => {
             <div className="space-y-4">
               {/* Select User */}
               <UserSelector />
-              
-              {/* Active User Card */}
-              <ActiveUserCard />
               
               {/* Direct Friends */}
               <FriendsList />

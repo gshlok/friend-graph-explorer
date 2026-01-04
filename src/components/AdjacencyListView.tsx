@@ -1,39 +1,24 @@
 import { useGraph } from '@/context/GraphContext';
-import { ChevronDown, ChevronRight, Grid3x3, Check, X } from 'lucide-react';
-import { useState } from 'react';
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from '@/components/ui/collapsible';
+import { Grid3x3, Check, X } from 'lucide-react';
 
 export function AdjacencyListView() {
   const { graph, users, selectedUserId } = useGraph();
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Collapsible open={isOpen} onOpenChange={setIsOpen}>
-      <div className="glass-card rounded-lg animate-slide-in-up">
-        <CollapsibleTrigger className="w-full p-6 flex items-center gap-3 hover:bg-secondary/20 transition-all duration-300 rounded-lg">
-          <div className="p-2 rounded-lg bg-muted animate-scale-in">
-            <Grid3x3 className="w-5 h-5 text-muted-foreground" />
-          </div>
-          <div className="flex-1 text-left">
-            <h2 className="text-lg font-semibold">Adjacency Matrix</h2>
-            <p className="text-sm text-muted-foreground">
-              2D matrix representation of graph
-            </p>
-          </div>
-          {isOpen ? (
-            <ChevronDown className="w-5 h-5 text-muted-foreground" />
-          ) : (
-            <ChevronRight className="w-5 h-5 text-muted-foreground" />
-          )}
-        </CollapsibleTrigger>
+    <div className="glass-card rounded-lg animate-slide-in-up p-6">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="p-2 rounded-lg bg-muted animate-scale-in">
+          <Grid3x3 className="w-5 h-5 text-muted-foreground" />
+        </div>
+        <div className="flex-1">
+          <h2 className="text-lg font-semibold">Adjacency Matrix</h2>
+          <p className="text-sm text-muted-foreground">
+            2D matrix representation of graph
+          </p>
+        </div>
+      </div>
 
-        <CollapsibleContent>
-          <div className="px-6 pb-6">
-            <div className="bg-background/50 rounded-lg p-4 border border-border/30 max-h-[500px] overflow-auto">
+      <div className="bg-background/50 rounded-lg p-4 border border-border/30 max-h-[500px] overflow-auto">
               {users.length === 0 ? (
                 <p className="text-muted-foreground italic text-center py-8">No users in graph</p>
               ) : (
@@ -139,6 +124,7 @@ export function AdjacencyListView() {
                 </div>
               )}
             </div>
+            
             <div className="mt-3 space-y-1">
               <p className="text-xs text-muted-foreground animate-fade-in">
                 Rows and columns represent users. A <Check className="w-3 h-3 inline text-node-friend" /> indicates a friendship edge.
@@ -158,9 +144,6 @@ export function AdjacencyListView() {
                 </div>
               </div>
             </div>
-          </div>
-        </CollapsibleContent>
-      </div>
-    </Collapsible>
+    </div>
   );
 }
