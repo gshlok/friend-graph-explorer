@@ -1,10 +1,12 @@
 import { GraphProvider } from '@/context/GraphContext';
 import { UserSelector } from '@/components/UserSelector';
+import { ActiveUserCard } from '@/components/ActiveUserCard';
 import { AddUserForm } from '@/components/AddUserForm';
 import { AddFriendshipForm } from '@/components/AddFriendshipForm';
 import { FriendsList } from '@/components/FriendsList';
 import { Recommendations } from '@/components/Recommendations';
 import { GraphVisualization } from '@/components/GraphVisualization';
+import { AdjacencyListView } from '@/components/AdjacencyListView';
 import { StatsBar } from '@/components/StatsBar';
 import { Network } from 'lucide-react';
 
@@ -36,22 +38,34 @@ const Index = () => {
           </section>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            {/* Left Column - Controls */}
+            {/* Left Column - Controls (reordered by cognitive importance) */}
             <div className="space-y-6">
+              {/* 1. Select User - Primary action */}
               <UserSelector />
+              
+              {/* 2. Active User Card - Context reinforcement */}
+              <ActiveUserCard />
+              
+              {/* 3. Add Forms - Modifications */}
               <AddUserForm />
               <AddFriendshipForm />
             </div>
 
             {/* Middle Column - Friends & Recommendations */}
             <div className="space-y-6">
+              {/* Direct Friends first - Distance 1 */}
               <FriendsList />
+              
+              {/* Recommendations - Distance 2 */}
               <Recommendations />
             </div>
 
             {/* Right Column - Graph Visualization */}
-            <div className="lg:col-span-1">
+            <div className="lg:col-span-1 space-y-6">
               <GraphVisualization />
+              
+              {/* Adjacency List - Technical representation */}
+              <AdjacencyListView />
             </div>
           </div>
 
