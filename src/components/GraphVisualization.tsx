@@ -24,7 +24,7 @@ type AnimationPhase = 'idle' | 'selecting' | 'traversing-friends' | 'traversing-
 export function GraphVisualization() {
   const { users, edges, selectedUserId, friends, recommendations, selectUser } = useGraph();
   const [positions, setPositions] = useState<Map<string, NodePosition>>(new Map());
-  const [dimensions, setDimensions] = useState({ width: 800, height: 500 });
+  const [dimensions, setDimensions] = useState({ width: 800, height: 700 });
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<ViewMode>('full');
   const [animationPhase, setAnimationPhase] = useState<AnimationPhase>('idle');

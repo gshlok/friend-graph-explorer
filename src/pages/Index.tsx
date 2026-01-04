@@ -17,7 +17,7 @@ const Index = () => {
       <div className="min-h-screen bg-background">
         {/* Header */}
         <header className="border-b border-border/50 bg-card/30 backdrop-blur-sm sticky top-0 z-10">
-          <div className="container py-4">
+          <div className="container py-3">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-primary/10">
@@ -40,15 +40,15 @@ const Index = () => {
           </div>
         </header>
 
-        <main className="container py-8">
+        <main className="container py-6">
           {/* Stats */}
-          <section className="mb-8">
+          <section className="mb-6">
             <StatsBar />
           </section>
 
-          <div className="grid lg:grid-cols-[350px_1fr] gap-8">
+          <div className="grid lg:grid-cols-[350px_1fr] gap-6">
             {/* Left Sidebar - Controls */}
-            <div className="space-y-6">
+            <div className="space-y-4">
               {/* 1. Select User - Primary action */}
               <UserSelector />
               
@@ -64,41 +64,38 @@ const Index = () => {
               {/* 5. Add Forms - Modifications */}
               <AddUserForm />
               <AddFriendshipForm />
+              
+              {/* Algorithm Explanation */}
+              <section className="glass-card rounded-lg p-4 fade-in">
+                <h3 className="text-sm font-semibold mb-3">How It Works</h3>
+                <div className="space-y-3 text-xs">
+                  <div>
+                    <p className="font-medium text-primary mb-1">Graph Structure</p>
+                    <p className="text-muted-foreground">
+                      Users as nodes, friendships as edges.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-primary mb-1">BFS Traversal</p>
+                    <p className="text-muted-foreground">
+                      Finds friends of friends at distance 2.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-primary mb-1">Ranking</p>
+                    <p className="text-muted-foreground">
+                      Ranked by mutual friend count.
+                    </p>
+                  </div>
+                </div>
+              </section>
             </div>
 
             {/* Main Content - Graph Visualization (Bigger) */}
-            <div className="space-y-6">
+            <div>
               <GraphVisualization />
             </div>
           </div>
-
-          {/* Algorithm Explanation */}
-          <section className="mt-12 glass-card rounded-lg p-6 fade-in">
-            <h2 className="text-lg font-semibold mb-4">How It Works</h2>
-            <div className="grid md:grid-cols-3 gap-6 text-sm">
-              <div>
-                <h3 className="font-medium text-primary mb-2">Graph Structure</h3>
-                <p className="text-muted-foreground">
-                  Users are represented as nodes, friendships as undirected edges. 
-                  The network uses an adjacency matrix for visual representation.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-medium text-primary mb-2">BFS Traversal</h3>
-                <p className="text-muted-foreground">
-                  Friend recommendations use a breadth-first search to find friends 
-                  of friends (nodes at distance 2 from the selected user).
-                </p>
-              </div>
-              <div>
-                <h3 className="font-medium text-primary mb-2">Ranking Algorithm</h3>
-                <p className="text-muted-foreground">
-                  Recommendations are ranked by mutual friend count. More mutual 
-                  connections = higher recommendation priority.
-                </p>
-              </div>
-            </div>
-          </section>
         </main>
       </div>
     </GraphProvider>

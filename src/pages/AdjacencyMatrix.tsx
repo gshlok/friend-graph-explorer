@@ -1,40 +1,18 @@
-import { GraphProvider } from '@/context/GraphContext';
 import { AdjacencyListView } from '@/components/AdjacencyListView';
-import { Network, ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
 
 const AdjacencyMatrix = () => {
   return (
-    <GraphProvider>
-      <div className="min-h-screen bg-background">
-        {/* Header */}
-        <header className="border-b border-border/50 bg-card/30 backdrop-blur-sm sticky top-0 z-10">
-          <div className="container py-4">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <Network className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h1 className="text-xl font-bold">Adjacency Matrix</h1>
-                  <p className="text-sm text-muted-foreground">
-                    2D matrix representation of the social network graph
-                  </p>
-                </div>
-              </div>
-              <Link to="/">
-                <Button variant="outline" className="gap-2">
-                  <ArrowLeft className="w-4 h-4" />
-                  Back to Graph
-                </Button>
-              </Link>
-            </div>
+    <div className="min-h-screen bg-background">
+        <div className="container py-6">
+          {/* Header */}
+          <div className="mb-6">
+            <h1 className="text-3xl font-bold mb-2">Adjacency Matrix</h1>
+            <p className="text-muted-foreground">
+              2D matrix representation of the social network graph
+            </p>
           </div>
-        </header>
 
-        <main className="container py-8">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-5xl">
             <AdjacencyListView />
             
             {/* Explanation */}
@@ -63,9 +41,8 @@ const AdjacencyMatrix = () => {
               </div>
             </section>
           </div>
-        </main>
+        </div>
       </div>
-    </GraphProvider>
   );
 };
 
