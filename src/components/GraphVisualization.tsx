@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo, useCallback, useRef } from 'react';
 import { useGraph } from '@/context/GraphContext';
 import { User } from '@/lib/graph';
+import { Users, GitBranch, Network } from 'lucide-react';
 
 interface NodePosition {
   id: string;
@@ -383,6 +384,37 @@ export function GraphVisualization() {
           </svg>
         </div>
         <h2 className="text-lg font-semibold">Network Graph</h2>
+        
+        {/* Stats */}
+        <div className="ml-auto flex items-center gap-6">
+          <div className="flex items-center gap-2">
+            <div className="p-2 rounded-lg bg-primary/10">
+              <Users className="w-4 h-4 text-primary" />
+            </div>
+            <div>
+              <p className="text-2xl font-bold leading-none">{users.length}</p>
+              <p className="text-xs text-muted-foreground">Nodes in graph</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="p-2 rounded-lg bg-primary/10">
+              <GitBranch className="w-4 h-4 text-primary" />
+            </div>
+            <div>
+              <p className="text-2xl font-bold leading-none">{edges.length}</p>
+              <p className="text-xs text-muted-foreground">Edges in graph</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="p-2 rounded-lg bg-primary/10">
+              <Network className="w-4 h-4 text-primary" />
+            </div>
+            <div>
+              <p className="text-2xl font-bold leading-none">{users.length > 0 ? ((edges.length * 2) / users.length).toFixed(1) : '0'}</p>
+              <p className="text-xs text-muted-foreground">Avg. degree</p>
+            </div>
+          </div>
+        </div>
       </div>
       
       {/* Legend */}

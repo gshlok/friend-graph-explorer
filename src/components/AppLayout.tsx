@@ -20,7 +20,7 @@ export function AppLayout({ children }: AppLayoutProps) {
   return (
     <div className="min-h-screen bg-background flex">
       {/* Sidebar */}
-      <aside className="w-64 border-r border-border/50 bg-card/30 backdrop-blur-sm flex flex-col">
+      <aside className="w-64 border-r border-border/50 bg-card/30 backdrop-blur-sm flex flex-col fixed left-0 top-0 bottom-0 z-20">
         {/* Logo/Header */}
         <div className="p-6 border-b border-border/50">
           <div className="flex items-center gap-3">
@@ -69,7 +69,7 @@ export function AppLayout({ children }: AppLayoutProps) {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 overflow-auto">
+      <main className="flex-1 overflow-auto ml-64">
         {children}
       </main>
     </div>
