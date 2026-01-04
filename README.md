@@ -1,73 +1,197 @@
-# Welcome to your Lovable project
+# Social Network Graph Explorer
 
-## Project info
+A interactive web application for visualizing and exploring social network graphs with friend recommendations using graph data structures and algorithms.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🌟 Features
 
-## How can I edit this code?
+### Graph Visualization
 
-There are several ways of editing your application.
+- **Interactive Network Graph**: Real-time visualization of users and their connections
+- **Static Circular Layout**: Nodes arranged in a clean circular pattern for optimal visibility
+- **Focused Mode**: Highlights selected user, their friends, and friend recommendations
+- **Color-coded Nodes**: Visual distinction between selected users, friends, recommendations, and others
+- **BFS Traversal Animation**: Animated breadth-first search visualization when selecting users
 
-**Use Lovable**
+### Friend Recommendations
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Smart Algorithm**: Uses BFS to find friends-of-friends (distance 2 nodes)
+- **Ranked by Mutual Friends**: Recommendations sorted by number of shared connections
+- **One-Click Add**: Add recommended friends directly from the recommendations card
+- **Path Visualization**: View connection paths showing how you're connected to recommendations
 
-Changes made via Lovable will be committed automatically to this repo.
+### Data Management
 
-**Use your preferred IDE**
+- **Add Users**: Create new nodes in the graph
+- **Create Friendships**: Establish undirected edges between users
+- **Adjacency Matrix**: Full 2D matrix visualization of all connections
+- **Real-time Updates**: All views update instantly when data changes
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Documentation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **How It Works**: Comprehensive explanation of algorithms and data structures
+- **Complexity Analysis**: Time and space complexity for all operations
+- **Algorithm Details**: In-depth coverage of BFS, ranking, and graph operations
 
-Follow these steps:
+## 🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Frontend Framework**: React 18 + TypeScript
+- **Build Tool**: Vite
+- **UI Components**: shadcn/ui + Radix UI
+- **Styling**: Tailwind CSS
+- **Routing**: React Router DOM
+- **Icons**: Lucide React
+- **State Management**: React Context API
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📊 Data Structures & Algorithms
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Graph Implementation
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+- **Adjacency List**: Internal representation using Set for O(1) friendship lookups
+- **Undirected Graph**: Bidirectional edges representing mutual friendships
+
+### Algorithms
+
+- **BFS (Breadth-First Search)**: O(V + E) traversal for finding friends and recommendations
+- **Mutual Friend Counting**: O(k²) where k is average friend count
+- **Recommendation Ranking**: O(r log r) sorting by mutual friend count
+
+### Complexity
+
+- **Add User**: O(1) time, O(1) space
+- **Add Friendship**: O(1) time, O(1) space
+- **Check Friendship**: O(1) time
+- **Get Recommendations**: O(V + E + k²) time
+- **Overall Space**: O(V + E)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or bun
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd friend-graph-explorer
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```bash
+# Create production build
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview production build
+npm run preview
+```
 
-## What technologies are used for this project?
+## 📁 Project Structure
 
-This project is built with:
+```
+friend-graph-explorer/
+├── src/
+│   ├── components/        # React components
+│   │   ├── ui/           # shadcn/ui components
+│   │   ├── AppLayout.tsx # Sidebar navigation layout
+│   │   ├── GraphVisualization.tsx
+│   │   ├── FriendsList.tsx
+│   │   ├── Recommendations.tsx
+│   │   ├── AdjacencyListView.tsx
+│   │   └── ...
+│   ├── context/          # React Context providers
+│   │   └── GraphContext.tsx
+│   ├── lib/              # Core logic
+│   │   ├── graph.ts      # Graph data structure
+│   │   └── utils.ts
+│   ├── pages/            # Route pages
+│   │   ├── Home.tsx
+│   │   ├── AddUser.tsx
+│   │   ├── AdjacencyMatrix.tsx
+│   │   └── HowItWorks.tsx
+│   └── App.tsx
+├── public/
+└── package.json
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🎯 Usage
 
-## How can I deploy this project?
+### Home Page
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+1. Select a user from the dropdown
+2. View their direct friends in the left sidebar
+3. See friend recommendations ranked by mutual connections
+4. Click the network graph nodes to explore different users
+5. Use the "+" button on recommendations to add them as friends
 
-## Can I connect a custom domain to my Lovable project?
+### Add User/Friend Page
 
-Yes, you can!
+- Enter a name to create a new user node
+- Select two users to create a friendship edge
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Adjacency Matrix Page
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- View the complete graph as a 2D matrix
+- Checkmarks indicate existing friendships
+- X indicates diagonal (self-connections)
+
+### How It Works Page
+
+- Learn about graph structures and algorithms
+- Understand BFS traversal implementation
+- Review complexity analysis for all operations
+
+## 🎨 Features Highlight
+
+- **Responsive Design**: Works on desktop and mobile devices
+- **Dark Theme**: Modern dark UI with glassmorphism effects
+- **Smooth Animations**: CSS animations for better UX
+- **Fixed Sidebar**: Navigation stays accessible while scrolling
+- **Color-Coded Legend**: Clear visual indicators for node types
+- **Toast Notifications**: User feedback for actions
+
+## 🔧 Configuration
+
+### Customizing Constants
+
+Edit graph physics in `src/components/GraphVisualization.tsx`:
+
+```typescript
+const NODE_RADIUS = 24;
+const SELECTED_NODE_RADIUS = 32;
+const REPULSION = 3000;
+```
+
+### Styling
+
+Tailwind configuration in `tailwind.config.ts`:
+
+- Custom colors for nodes (selected, friend, recommended)
+- Animation utilities
+- Custom CSS variables
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## 📧 Contact
+
+For questions or feedback, please open an issue on GitHub.
+
+---
+
+Built with ❤️ using React, TypeScript, and Graph Data Structures
