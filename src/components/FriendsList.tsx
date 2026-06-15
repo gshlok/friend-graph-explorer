@@ -1,8 +1,23 @@
 import { useGraph } from '@/context/GraphContext';
-import { Users, UserX } from 'lucide-react';
+import { Users, UserX, UserMinus } from 'lucide-react';
+import { toast } from 'sonner';
 
 export function FriendsList() {
-  const { selectedUser, friends, selectUser } = useGraph();
+  const { selectedUser, friends, selectUser, removeFriendship } = useGraph();
+
+  const handleRemoveFriend = (e: React.MouseEvent, friendId: string) => {
+    e.stopPropagation();
+    if (!selectedUser) return;
+    const success = removeFriendship(selectedUser.id, friendId);
+    if (success) {
+      const friend = friends.find(f => f.id === friendId);
+      toast.success(`Removed connection: ${selectedUser.name} ↔ ${friend?.name || 'Friend'}`, {
+        duration: 2000,
+      });
+    } else {
+      toast.error('Failed to remove connection');
+    }
+  };
 
   return (
     <div className="glass-card rounded-lg p-6 animate-slide-in-left">
@@ -53,9 +68,18 @@ export function FriendsList() {
                 </span>
               </div>
               <span className="font-medium flex-1">{friend.name}</span>
-              <span className="text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Click to select
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Click to select
+                </span>
+                <button
+                  onClick={(e) => handleRemoveFriend(e, friend.id)}
+                  title="Remove connection"
+                  className="p-1.5 rounded-md text-muted-foreground hover:text-destructive hover:bg-destructive/10 opacity-0 group-hover:opacity-100 transition-all duration-300 focus:outline-none"
+                >
+                  <UserMinus className="w-4 h-4" />
+                </button>
+              </div>
             </li>
           ))}
         </ul>

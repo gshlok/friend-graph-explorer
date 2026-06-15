@@ -1,8 +1,32 @@
 import { useGraph } from '@/context/GraphContext';
 import { Grid3x3, Check, X } from 'lucide-react';
+import { toast } from 'sonner';
 
 export function AdjacencyListView() {
-  const { graph, users, selectedUserId } = useGraph();
+  const { graph, users, selectedUserId, addFriendship, removeFriendship } = useGraph();
+
+  const handleCellClick = (rowId: string, colId: string, isFriend: boolean) => {
+    if (rowId === colId) return;
+    const u1 = graph.getUser(rowId);
+    const u2 = graph.getUser(colId);
+    if (!u1 || !u2) return;
+
+    if (isFriend) {
+      const success = removeFriendship(rowId, colId);
+      if (success) {
+        toast.success(`Removed friendship: ${u1.name} ↔ ${u2.name}`, { duration: 2000 });
+      } else {
+        toast.error('Failed to remove friendship');
+      }
+    } else {
+      const success = addFriendship(rowId, colId);
+      if (success) {
+        toast.success(`Created friendship: ${u1.name} ↔ ${u2.name}`, { duration: 2000 });
+      } else {
+        toast.error('Failed to create friendship');
+      }
+    }
+  };
 
   return (
     <div className="glass-card rounded-lg animate-slide-in-up p-6">
@@ -89,12 +113,14 @@ export function AdjacencyListView() {
                             return (
                               <td 
                                 key={userCol.id}
+                                onClick={() => !isSelf && handleCellClick(userRow.id, userCol.id, isFriend)}
+                                title={isSelf ? undefined : isFriend ? `Click to remove connection with ${userCol.name}` : `Click to add connection with ${userCol.name}`}
                                 className={`border border-border/50 p-2 text-center transition-all duration-300 ${
                                   isSelf 
                                     ? 'bg-muted/50' 
                                     : isFriend 
                                       ? 'bg-node-friend/20 hover:bg-node-friend/30 cursor-pointer' 
-                                      : 'bg-background/50 hover:bg-secondary/30'
+                                      : 'bg-background/50 hover:bg-secondary/30 cursor-pointer'
                                 } ${
                                   (isRowSelected || isColSelected) && !isSelf 
                                     ? 'ring-1 ring-primary/30' 

@@ -12,6 +12,7 @@ interface GraphContextType {
   selectUser: (userId: string | null) => void;
   addUser: (name: string) => User;
   addFriendship: (userId1: string, userId2: string) => boolean;
+  removeFriendship: (userId1: string, userId2: string) => boolean;
   refreshData: () => void;
 }
 
@@ -61,6 +62,12 @@ export function GraphProvider({ children }: { children: React.ReactNode }) {
     return result;
   }, [graph, refreshData]);
 
+  const removeFriendship = useCallback((userId1: string, userId2: string) => {
+    const result = graph.removeFriendship(userId1, userId2);
+    if (result) refreshData();
+    return result;
+  }, [graph, refreshData]);
+
   const value: GraphContextType = {
     graph,
     users,
@@ -72,6 +79,7 @@ export function GraphProvider({ children }: { children: React.ReactNode }) {
     selectUser,
     addUser,
     addFriendship,
+    removeFriendship,
     refreshData,
   };
 

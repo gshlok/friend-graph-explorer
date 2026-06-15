@@ -43,7 +43,15 @@ const ALGO_COLOR: Record<string, string> = {
   matrix: 'hsl(15 90% 62%)', // orange — the slowest
 };
 
-const SWEEP_SIZES = [500, 1000, 2500, 5000, 7500, 10000];
+const getSweepSizes = (maxNodes: number): number[] => {
+  if (maxNodes <= 10000) {
+    return [500, 1000, 2500, 5000, 7500, 10000];
+  } else if (maxNodes <= 50000) {
+    return [1000, 5000, 10000, 20000, 35000, 50000];
+  } else {
+    return [1000, 10000, 25000, 50000, 75000, 100000];
+  }
+};
 
 const fmt = (n: number, d = 0) =>
   n.toLocaleString(undefined, { maximumFractionDigits: d, minimumFractionDigits: d });
@@ -102,12 +110,15 @@ const Benchmark = () => {
     setPhase('benchmarking');
     setProgress(0);
     try {
-      const bench = await runBenchmark(nodeCount, 400, (frac, label) => {
+      const queries = nodeCount <= 10000 ? 400 : nodeCount <= 50000 ? 200 : 100;
+      const bench = await runBenchmark(nodeCount, queries, (frac, label) => {
         setProgress(frac * 0.6);
         setStatus(label);
       });
       setResult(bench);
-      const sweep = await runScalingSweep(SWEEP_SIZES, 200, (frac, label) => {
+      const sweepSizes = getSweepSizes(nodeCount);
+      const sweepQueries = nodeCount <= 10000 ? 200 : nodeCount <= 50000 ? 100 : 50;
+      const sweep = await runScalingSweep(sweepSizes, sweepQueries, (frac, label) => {
         setProgress(0.6 + frac * 0.4);
         setStatus(label);
       });
@@ -149,7 +160,7 @@ const Benchmark = () => {
           <p className="text-muted-foreground text-lg max-w-3xl">
             A live, in-browser benchmark on a{' '}
             <span className="text-foreground font-medium">scale-free social network</span> of up to
-            10,000 users. We pit this project's recommendation algorithm against the standard
+            100,000 users. We pit this project's recommendation algorithm against the standard
             graph-traversal approaches — measured for real with{' '}
             <span className="font-mono text-accent">performance.now()</span>.
           </p>
@@ -171,7 +182,7 @@ const Benchmark = () => {
               <Slider
                 value={[nodeCount]}
                 min={500}
-                max={10000}
+                max={100000}
                 step={500}
                 disabled={running}
                 onValueChange={(v) => setNodeCount(v[0])}
@@ -179,7 +190,7 @@ const Benchmark = () => {
               <div className="flex justify-between text-xs text-muted-foreground mt-2">
                 <span>500</span>
                 <span>~{fmt(nodeCount * 4)} edges · Barabási–Albert model</span>
-                <span>10,000</span>
+                <span>100,000</span>
               </div>
             </div>
             <Button size="lg" onClick={runAll} disabled={running} className="gap-2 min-w-44">
@@ -368,7 +379,7 @@ const Benchmark = () => {
                   <h2 className="text-lg font-semibold">How each algorithm scales with network size</h2>
                 </div>
                 <p className="text-sm text-muted-foreground mb-6">
-                  Per-query time (µs) as the network grows from 500 → 10,000 users. The optimized
+                  Per-query time (µs) as the network grows from 500 → 100,000 users. The optimized
                   algorithm stays{' '}
                   <span className="text-primary font-medium">flat</span>; whole-graph approaches
                   climb with population.

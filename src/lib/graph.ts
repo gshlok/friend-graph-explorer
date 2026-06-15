@@ -50,6 +50,21 @@ export class SocialGraph {
     return true;
   }
 
+  // Remove friendship between two users (undirected edge)
+  removeFriendship(userId1: string, userId2: string): boolean {
+    if (!this.adjacencyList.has(userId1) || !this.adjacencyList.has(userId2)) {
+      return false;
+    }
+    const set1 = this.adjacencyList.get(userId1);
+    const set2 = this.adjacencyList.get(userId2);
+    if (set1 && set2) {
+      const deleted1 = set1.delete(userId2);
+      const deleted2 = set2.delete(userId1);
+      return deleted1 || deleted2;
+    }
+    return false;
+  }
+
   // Get all users
   getAllUsers(): User[] {
     return Array.from(this.users.values());
