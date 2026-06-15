@@ -8,6 +8,7 @@ import { AppLayout } from "@/components/AppLayout";
 import Home from "./pages/Home";
 import AddUser from "./pages/AddUser";
 import AdjacencyMatrix from "./pages/AdjacencyMatrix";
+import Benchmark from "./pages/Benchmark";
 import HowItWorks from "./pages/HowItWorks";
 import NotFound from "./pages/NotFound";
 
@@ -25,6 +26,7 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/add-user" element={<AddUser />} />
               <Route path="/adjacency-matrix" element={<AdjacencyMatrix />} />
+              <Route path="/benchmark" element={<Benchmark />} />
               <Route path="/how-it-works" element={<HowItWorks />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
