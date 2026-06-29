@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Network, Home, UserPlus, Grid3x3, BookOpen, Gauge } from 'lucide-react';
+import { Network, Home, UserPlus, Grid3x3, BookOpen, Gauge, Cpu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface AppLayoutProps {
@@ -12,6 +12,7 @@ const navigation = [
   { name: 'Add User/Friend', href: '/add-user', icon: UserPlus },
   { name: 'Adjacency Matrix', href: '/adjacency-matrix', icon: Grid3x3 },
   { name: 'Benchmark', href: '/benchmark', icon: Gauge },
+  { name: 'Visualizer', href: '/visualizer', icon: Cpu },
   { name: 'How It Works', href: '/how-it-works', icon: BookOpen },
 ];
 

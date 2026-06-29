@@ -374,3 +374,41 @@ export async function runScalingSweep(
 function yieldToUI(): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, 0));
 }
+
+// Synchronous variants — no UI yields. Used for headless screenshot capture
+// where the setTimeout-based async pipeline does not drain reliably.
+export function runBenchmarkSync(size: number, queries: number): BenchmarkOutput {
+  const g = generateSocialGraph(size);
+  const sources = sampleSources(size, queries);
+  const raw = ALGORITHMS.map((algo) => ({ algo, ms: timeAlgo(g, algo, sources) }));
+  const slowest = Math.max(...raw.map((r) => r.ms)) || 1;
+  const results: AlgoResult[] = raw.map(({ algo, ms }) => ({
+    key: algo.key,
+    short: algo.short,
+    name: algo.name,
+    complexity: algo.complexity,
+    optimized: algo.optimized,
+    totalMs: ms,
+    perQueryUs: (ms / sources.length) * 1000,
+    queriesPerSec: ms > 0 ? (sources.length / ms) * 1000 : 0,
+    speedupVsSlowest: ms > 0 ? slowest / ms : 1,
+  }));
+  return {
+    graph: { size: g.size, edges: g.edges, avgDegree: g.avgDegree },
+    queries: sources.length,
+    results,
+  };
+}
+
+export function runScalingSweepSync(sizes: number[], queriesPerSize: number): ScalingPoint[] {
+  return sizes.map((size) => {
+    const g = generateSocialGraph(size);
+    const sources = sampleSources(size, queriesPerSize);
+    const point: ScalingPoint = { size };
+    for (const algo of ALGORITHMS) {
+      const ms = timeAlgo(g, algo, sources);
+      point[algo.key] = +((ms / sources.length) * 1000).toFixed(2);
+    }
+    return point;
+  });
+}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Gauge,
   Zap,
@@ -30,6 +30,8 @@ import { AlgoRaceSimulation } from '@/components/AlgoRaceSimulation';
 import {
   runBenchmark,
   runScalingSweep,
+  runBenchmarkSync,
+  runScalingSweepSync,
   ALGORITHMS,
   type BenchmarkOutput,
   type ScalingPoint,
@@ -93,6 +95,8 @@ const Benchmark = () => {
   const [status, setStatus] = useState('');
   const [result, setResult] = useState<BenchmarkOutput | null>(null);
   const [scaling, setScaling] = useState<ScalingPoint[] | null>(null);
+  // When true (headless ?charts=1 capture), hide the animated race for a compact page.
+  const [hideSim, setHideSim] = useState(false);
 
   const running = phase === 'sim' || phase === 'benchmarking';
 
@@ -132,6 +136,26 @@ const Benchmark = () => {
 
   // Replay just the animation without recomputing the numbers.
   const replaySim = () => setSimKey((k) => k + 1);
+
+  // Auto-run when ?auto=1 (used for headless screenshot capture).
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('auto') === '1') {
+      const n = Number(params.get('nodes'));
+      const size = n >= 500 && n <= 10000 ? n : 10000;
+      setNodeCount(size);
+      if (params.get('charts') === '1') {
+        // Synchronous path for headless screenshot of the charts/table.
+        setHideSim(true);
+        setResult(runBenchmarkSync(size, 400));
+        setScaling(runScalingSweepSync(SWEEP_SIZES, 200));
+        setPhase('results');
+      } else {
+        runAll();
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const sorted = result ? [...result.results].sort((a, b) => a.totalMs - b.totalMs) : [];
   const winner = sorted[0];
@@ -226,7 +250,7 @@ const Benchmark = () => {
         )}
 
         {/* Animated simulation — the visual race */}
-        {phase !== 'idle' && (
+        {phase !== 'idle' && !hideSim && (
           <section className="glass-card rounded-lg p-6 mb-8 animate-fade-in">
             <div className="flex items-start justify-between gap-4 mb-1 flex-wrap">
               <div>
@@ -362,7 +386,7 @@ const Benchmark = () => {
                     cursor={{ fill: 'hsl(222 47% 20% / 0.4)' }}
                     content={<ChartTooltip unit="µs" />}
                   />
-                  <Bar dataKey="perQueryUs" radius={[0, 6, 6, 0]}>
+                  <Bar dataKey="perQueryUs" radius={[0, 6, 6, 0]} isAnimationActive={false}>
                     {barData.map((d) => (
                       <Cell key={d.key} fill={ALGO_COLOR[d.key]} />
                     ))}
@@ -415,6 +439,7 @@ const Benchmark = () => {
                         strokeWidth={a.optimized ? 3 : 2}
                         dot={{ r: a.optimized ? 4 : 2 }}
                         activeDot={{ r: 5 }}
+                        isAnimationActive={false}
                       />
                     ))}
                   </LineChart>

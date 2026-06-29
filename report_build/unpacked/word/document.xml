@@ -1,0 +1,4559 @@
+<?xml version="1.0" encoding="UTF-8"?><w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh wp14">
+  <w:body>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:left="45"/>
+        <w:rPr>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="0" distR="0">
+            <wp:extent cx="6963742" cy="934593"/>
+            <wp:effectExtent l="0" t="0" r="0" b="0"/>
+            <wp:docPr id="2" name="Picture 1"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="2" name="Image 2"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId7" cstate="print"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="6963742" cy="934593"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="21"/>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:ind w:left="720" w:right="0"/>
+        <w:jc w:val="left"/>
+      </w:pPr>
+      <w:r>
+        <w:t>DEPARTMENT</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-19"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>OF</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-16"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>INFORMATION</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-17"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>SCIENCE</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-16"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>AND</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-16"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>ENGINEERING</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="204"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:left="2192" w:right="2293"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri"/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="24"/>
+          <w:highlight w:val="yellow"/>
+        </w:rPr>
+        <w:t>TYPE</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri"/>
+          <w:color w:val="FF0000"/>
+          <w:spacing w:val="-5"/>
+          <w:sz w:val="24"/>
+          <w:highlight w:val="yellow"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri"/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="24"/>
+          <w:highlight w:val="yellow"/>
+        </w:rPr>
+        <w:t>YOUR</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri"/>
+          <w:color w:val="FF0000"/>
+          <w:spacing w:val="-3"/>
+          <w:sz w:val="24"/>
+          <w:highlight w:val="yellow"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri"/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="24"/>
+          <w:highlight w:val="yellow"/>
+        </w:rPr>
+        <w:t>COMPLETE</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri"/>
+          <w:color w:val="FF0000"/>
+          <w:spacing w:val="-3"/>
+          <w:sz w:val="24"/>
+          <w:highlight w:val="yellow"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri"/>
+          <w:color w:val="FF0000"/>
+          <w:sz w:val="24"/>
+          <w:highlight w:val="yellow"/>
+        </w:rPr>
+        <w:t>TITLE</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri"/>
+          <w:color w:val="FF0000"/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+          <w:highlight w:val="yellow"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri"/>
+          <w:color w:val="FF0000"/>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="24"/>
+          <w:highlight w:val="yellow"/>
+        </w:rPr>
+        <w:t>HERE</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+        <w:spacing w:before="116"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Calibri"/>
+          <w:i w:val="0"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:spacing w:line="388" w:lineRule="auto"/>
+        <w:ind w:left="2192"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+        <mc:AlternateContent>
+          <mc:Choice Requires="wpg">
+            <w:drawing>
+              <wp:anchor distT="0" distB="0" distL="0" distR="0" simplePos="0" relativeHeight="487455232" behindDoc="1" locked="0" layoutInCell="1" allowOverlap="1">
+                <wp:simplePos x="0" y="0"/>
+                <wp:positionH relativeFrom="page">
+                  <wp:posOffset>2589847</wp:posOffset>
+                </wp:positionH>
+                <wp:positionV relativeFrom="paragraph">
+                  <wp:posOffset>670520</wp:posOffset>
+                </wp:positionV>
+                <wp:extent cx="2755900" cy="2873375"/>
+                <wp:effectExtent l="0" t="0" r="0" b="0"/>
+                <wp:wrapNone/>
+                <wp:docPr id="3" name="Group 2"/>
+                <wp:cNvGraphicFramePr>
+                  <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"/>
+                </wp:cNvGraphicFramePr>
+                <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+                  <a:graphicData uri="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup">
+                    <wpg:wgp>
+                      <wpg:cNvGrpSpPr>
+                        <a:grpSpLocks/>
+                      </wpg:cNvGrpSpPr>
+                      <wpg:grpSpPr>
+                        <a:xfrm>
+                          <a:off x="0" y="0"/>
+                          <a:ext cx="2755900" cy="2873375"/>
+                          <a:chOff x="0" y="0"/>
+                          <a:chExt cx="2755900" cy="2873375"/>
+                        </a:xfrm>
+                      </wpg:grpSpPr>
+                      <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                        <pic:nvPicPr>
+                          <pic:cNvPr id="4" name="Image 4"/>
+                          <pic:cNvPicPr/>
+                        </pic:nvPicPr>
+                        <pic:blipFill>
+                          <a:blip r:embed="rId8" cstate="print"/>
+                          <a:stretch>
+                            <a:fillRect/>
+                          </a:stretch>
+                        </pic:blipFill>
+                        <pic:spPr>
+                          <a:xfrm>
+                            <a:off x="0" y="129988"/>
+                            <a:ext cx="2755900" cy="2743200"/>
+                          </a:xfrm>
+                          <a:prstGeom prst="rect">
+                            <a:avLst/>
+                          </a:prstGeom>
+                        </pic:spPr>
+                      </pic:pic>
+                      <wps:wsp>
+                        <wps:cNvPr id="5" name="Textbox 5"/>
+                        <wps:cNvSpPr txBox="1"/>
+                        <wps:spPr>
+                          <a:xfrm>
+                            <a:off x="1010836" y="0"/>
+                            <a:ext cx="747395" cy="197485"/>
+                          </a:xfrm>
+                          <a:prstGeom prst="rect">
+                            <a:avLst/>
+                          </a:prstGeom>
+                        </wps:spPr>
+                        <wps:txbx>
+                          <w:txbxContent>
+                            <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+                              <w:pPr>
+                                <w:spacing w:line="310" w:lineRule="exact"/>
+                                <w:rPr>
+                                  <w:b/>
+                                  <w:sz w:val="28"/>
+                                </w:rPr>
+                              </w:pPr>
+                              <w:r>
+                                <w:rPr>
+                                  <w:b/>
+                                  <w:spacing w:val="-2"/>
+                                  <w:sz w:val="28"/>
+                                </w:rPr>
+                                <w:t>REPORT</w:t>
+                              </w:r>
+                            </w:p>
+                          </w:txbxContent>
+                        </wps:txbx>
+                        <wps:bodyPr wrap="square" lIns="0" tIns="0" rIns="0" bIns="0" rtlCol="0">
+                          <a:noAutofit/>
+                        </wps:bodyPr>
+                      </wps:wsp>
+                      <wps:wsp>
+                        <wps:cNvPr id="6" name="Textbox 6"/>
+                        <wps:cNvSpPr txBox="1"/>
+                        <wps:spPr>
+                          <a:xfrm>
+                            <a:off x="969515" y="649126"/>
+                            <a:ext cx="847725" cy="194310"/>
+                          </a:xfrm>
+                          <a:prstGeom prst="rect">
+                            <a:avLst/>
+                          </a:prstGeom>
+                        </wps:spPr>
+                        <wps:txbx>
+                          <w:txbxContent>
+                            <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+                              <w:pPr>
+                                <w:spacing w:before="10"/>
+                                <w:ind w:left="20"/>
+                                <w:rPr>
+                                  <w:i/>
+                                  <w:sz w:val="24"/>
+                                </w:rPr>
+                              </w:pPr>
+                              <w:r>
+                                <w:rPr>
+                                  <w:i/>
+                                  <w:sz w:val="24"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">Submitted </w:t>
+                              </w:r>
+                              <w:r>
+                                <w:rPr>
+                                  <w:i/>
+                                  <w:spacing w:val="-5"/>
+                                  <w:sz w:val="24"/>
+                                </w:rPr>
+                                <w:t>by</w:t>
+                              </w:r>
+                            </w:p>
+                          </w:txbxContent>
+                        </wps:txbx>
+                        <wps:bodyPr wrap="square" lIns="0" tIns="0" rIns="0" bIns="0" rtlCol="0">
+                          <a:noAutofit/>
+                        </wps:bodyPr>
+                      </wps:wsp>
+                      <wps:wsp>
+                        <wps:cNvPr id="7" name="Textbox 7"/>
+                        <wps:cNvSpPr txBox="1"/>
+                        <wps:spPr>
+                          <a:xfrm>
+                            <a:off x="681719" y="2353331"/>
+                            <a:ext cx="1423035" cy="496570"/>
+                          </a:xfrm>
+                          <a:prstGeom prst="rect">
+                            <a:avLst/>
+                          </a:prstGeom>
+                        </wps:spPr>
+                        <wps:txbx>
+                          <w:txbxContent>
+                            <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+                              <w:pPr>
+                                <w:spacing w:before="10"/>
+                                <w:ind w:left="20"/>
+                                <w:rPr>
+                                  <w:i/>
+                                  <w:sz w:val="24"/>
+                                </w:rPr>
+                              </w:pPr>
+                              <w:r>
+                                <w:rPr>
+                                  <w:i/>
+                                  <w:sz w:val="24"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">Under the guidance </w:t>
+                              </w:r>
+                              <w:r>
+                                <w:rPr>
+                                  <w:i/>
+                                  <w:spacing w:val="-5"/>
+                                  <w:sz w:val="24"/>
+                                </w:rPr>
+                                <w:t>of</w:t>
+                              </w:r>
+                            </w:p>
+                            <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+                              <w:pPr>
+                                <w:spacing w:before="200"/>
+                                <w:ind w:left="102"/>
+                                <w:rPr>
+                                  <w:b/>
+                                  <w:sz w:val="24"/>
+                                </w:rPr>
+                              </w:pPr>
+                              <w:r>
+                                <w:rPr>
+                                  <w:b/>
+                                  <w:sz w:val="24"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">Name of the </w:t>
+                              </w:r>
+                              <w:r>
+                                <w:rPr>
+                                  <w:b/>
+                                  <w:spacing w:val="-2"/>
+                                  <w:sz w:val="24"/>
+                                </w:rPr>
+                                <w:t>Guide</w:t>
+                              </w:r>
+                            </w:p>
+                          </w:txbxContent>
+                        </wps:txbx>
+                        <wps:bodyPr wrap="square" lIns="0" tIns="0" rIns="0" bIns="0" rtlCol="0">
+                          <a:noAutofit/>
+                        </wps:bodyPr>
+                      </wps:wsp>
+                    </wpg:wgp>
+                  </a:graphicData>
+                </a:graphic>
+              </wp:anchor>
+            </w:drawing>
+          </mc:Choice>
+          <mc:Fallback>
+            <w:pict>
+              <v:group id="Group 2" o:spid="_x0000_s1026" style="position:absolute;left:0;text-align:left;margin-left:203.9pt;margin-top:52.8pt;width:217pt;height:226.25pt;z-index:-15861248;mso-wrap-distance-left:0;mso-wrap-distance-right:0;mso-position-horizontal-relative:page" coordsize="27559,28733" o:gfxdata="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 ">
+                <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+                  <v:stroke joinstyle="miter"/>
+                  <v:formulas>
+                    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+                    <v:f eqn="sum @0 1 0"/>
+                    <v:f eqn="sum 0 0 @1"/>
+                    <v:f eqn="prod @2 1 2"/>
+                    <v:f eqn="prod @3 21600 pixelWidth"/>
+                    <v:f eqn="prod @3 21600 pixelHeight"/>
+                    <v:f eqn="sum @0 0 1"/>
+                    <v:f eqn="prod @6 1 2"/>
+                    <v:f eqn="prod @7 21600 pixelWidth"/>
+                    <v:f eqn="sum @8 21600 0"/>
+                    <v:f eqn="prod @7 21600 pixelHeight"/>
+                    <v:f eqn="sum @10 21600 0"/>
+                  </v:formulas>
+                  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+                  <o:lock v:ext="edit" aspectratio="t"/>
+                </v:shapetype>
+                <v:shape id="Image 4" o:spid="_x0000_s1027" type="#_x0000_t75" style="position:absolute;top:1299;width:27559;height:27432;visibility:visible;mso-wrap-style:square" o:gfxdata="UEsDBBQABgAIAAAAIQDb4fbL7gAAAIUBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbHyQz07DMAyH 70i8Q+QralM4IITa7kDhCAiNB7ASt43WOlEcyvb2pNu4IODoPz9/n1xv9vOkForiPDdwXVagiI23 jocG3rdPxR0oScgWJ8/UwIEENu3lRb09BBKV0ywNjCmFe63FjDSjlD4Q50nv44wpl3HQAc0OB9I3 VXWrjedEnIq03oC27qjHjympx31un0wiTQLq4bS4shrAECZnMGVTvbD9QSnOhDInjzsyuiBXWQP0 r4R18jfgnHvJr4nOknrFmJ5xzhraRtHWf3Kkpfz/yGo5S+H73hkquyhdjr3R8m2lj09svwAAAP// AwBQSwMEFAAGAAgAAAAhAFr0LFu/AAAAFQEAAAsAAABfcmVscy8ucmVsc2zPwWrDMAwG4Ptg72B0 X5TuUMaI01uh19I+gLGVxCy2jGSy9e1nemrHjpL4P0nD4SetZiPRyNnCruvBUPYcYp4tXC/Htw8w Wl0ObuVMFm6kcBhfX4Yzra62kC6xqGlKVgtLreUTUf1CyWnHhXKbTCzJ1VbKjMX5LzcTvvf9HuXR gPHJNKdgQU5hB+ZyK23zHztFL6w81c5zQp6m6P9TMfB3PtPWFCczVQtB9N4U2rp2HOA44NMz4y8A AAD//wMAUEsDBBQABgAIAAAAIQCOHkAOxAAAANoAAAAPAAAAZHJzL2Rvd25yZXYueG1sRI9Ba8JA FITvQv/D8gq96aZVrEQ3oRTFVnLRFnp9ZJ9J2uzbJLua+O+7guBxmJlvmFU6mFqcqXOVZQXPkwgE cW51xYWC76/NeAHCeWSNtWVScCEHafIwWmGsbc97Oh98IQKEXYwKSu+bWEqXl2TQTWxDHLyj7Qz6 ILtC6g77ADe1fImiuTRYcVgosaH3kvK/w8koyDb94vP1p91N3W+WraN2W53arVJPj8PbEoSnwd/D t/aHVjCD65VwA2TyDwAA//8DAFBLAQItABQABgAIAAAAIQDb4fbL7gAAAIUBAAATAAAAAAAAAAAA AAAAAAAAAABbQ29udGVudF9UeXBlc10ueG1sUEsBAi0AFAAGAAgAAAAhAFr0LFu/AAAAFQEAAAsA AAAAAAAAAAAAAAAAHwEAAF9yZWxzLy5yZWxzUEsBAi0AFAAGAAgAAAAhAI4eQA7EAAAA2gAAAA8A AAAAAAAAAAAAAAAABwIAAGRycy9kb3ducmV2LnhtbFBLBQYAAAAAAwADALcAAAD4AgAAAAA= ">
+                  <v:imagedata r:id="rId9" o:title=""/>
+                </v:shape>
+                <v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+                  <v:stroke joinstyle="miter"/>
+                  <v:path gradientshapeok="t" o:connecttype="rect"/>
+                </v:shapetype>
+                <v:shape id="Textbox 5" o:spid="_x0000_s1028" type="#_x0000_t202" style="position:absolute;left:10108;width:7474;height:1974;visibility:visible;mso-wrap-style:square;v-text-anchor:top" o:gfxdata="UEsDBBQABgAIAAAAIQDb4fbL7gAAAIUBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbHyQz07DMAyH 70i8Q+QralM4IITa7kDhCAiNB7ASt43WOlEcyvb2pNu4IODoPz9/n1xv9vOkForiPDdwXVagiI23 jocG3rdPxR0oScgWJ8/UwIEENu3lRb09BBKV0ywNjCmFe63FjDSjlD4Q50nv44wpl3HQAc0OB9I3 VXWrjedEnIq03oC27qjHjympx31un0wiTQLq4bS4shrAECZnMGVTvbD9QSnOhDInjzsyuiBXWQP0 r4R18jfgnHvJr4nOknrFmJ5xzhraRtHWf3Kkpfz/yGo5S+H73hkquyhdjr3R8m2lj09svwAAAP// AwBQSwMEFAAGAAgAAAAhAFr0LFu/AAAAFQEAAAsAAABfcmVscy8ucmVsc2zPwWrDMAwG4Ptg72B0 X5TuUMaI01uh19I+gLGVxCy2jGSy9e1nemrHjpL4P0nD4SetZiPRyNnCruvBUPYcYp4tXC/Htw8w Wl0ObuVMFm6kcBhfX4Yzra62kC6xqGlKVgtLreUTUf1CyWnHhXKbTCzJ1VbKjMX5LzcTvvf9HuXR gPHJNKdgQU5hB+ZyK23zHztFL6w81c5zQp6m6P9TMfB3PtPWFCczVQtB9N4U2rp2HOA44NMz4y8A AAD//wMAUEsDBBQABgAIAAAAIQBXZw8vwwAAANoAAAAPAAAAZHJzL2Rvd25yZXYueG1sRI9Ba8JA FITvBf/D8gRvdWNBqdFVRCwUhGKMB4/P7DNZzL6N2a3Gf98VCh6HmfmGmS87W4sbtd44VjAaJiCI C6cNlwoO+df7JwgfkDXWjknBgzwsF723Oaba3Tmj2z6UIkLYp6igCqFJpfRFRRb90DXE0Tu71mKI si2lbvEe4baWH0kykRYNx4UKG1pXVFz2v1bB6sjZxlx/TrvsnJk8nya8nVyUGvS71QxEoC68wv/t b61gDM8r8QbIxR8AAAD//wMAUEsBAi0AFAAGAAgAAAAhANvh9svuAAAAhQEAABMAAAAAAAAAAAAA AAAAAAAAAFtDb250ZW50X1R5cGVzXS54bWxQSwECLQAUAAYACAAAACEAWvQsW78AAAAVAQAACwAA AAAAAAAAAAAAAAAfAQAAX3JlbHMvLnJlbHNQSwECLQAUAAYACAAAACEAV2cPL8MAAADaAAAADwAA AAAAAAAAAAAAAAAHAgAAZHJzL2Rvd25yZXYueG1sUEsFBgAAAAADAAMAtwAAAPcCAAAAAA== " filled="f" stroked="f">
+                  <v:textbox inset="0,0,0,0">
+                    <w:txbxContent>
+                      <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+                        <w:pPr>
+                          <w:spacing w:line="310" w:lineRule="exact"/>
+                          <w:rPr>
+                            <w:b/>
+                            <w:sz w:val="28"/>
+                          </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                          <w:rPr>
+                            <w:b/>
+                            <w:spacing w:val="-2"/>
+                            <w:sz w:val="28"/>
+                          </w:rPr>
+                          <w:t>REPORT</w:t>
+                        </w:r>
+                      </w:p>
+                    </w:txbxContent>
+                  </v:textbox>
+                </v:shape>
+                <v:shape id="Textbox 6" o:spid="_x0000_s1029" type="#_x0000_t202" style="position:absolute;left:9695;top:6491;width:8477;height:1943;visibility:visible;mso-wrap-style:square;v-text-anchor:top" o:gfxdata="UEsDBBQABgAIAAAAIQDb4fbL7gAAAIUBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbHyQz07DMAyH 70i8Q+QralM4IITa7kDhCAiNB7ASt43WOlEcyvb2pNu4IODoPz9/n1xv9vOkForiPDdwXVagiI23 jocG3rdPxR0oScgWJ8/UwIEENu3lRb09BBKV0ywNjCmFe63FjDSjlD4Q50nv44wpl3HQAc0OB9I3 VXWrjedEnIq03oC27qjHjympx31un0wiTQLq4bS4shrAECZnMGVTvbD9QSnOhDInjzsyuiBXWQP0 r4R18jfgnHvJr4nOknrFmJ5xzhraRtHWf3Kkpfz/yGo5S+H73hkquyhdjr3R8m2lj09svwAAAP// AwBQSwMEFAAGAAgAAAAhAFr0LFu/AAAAFQEAAAsAAABfcmVscy8ucmVsc2zPwWrDMAwG4Ptg72B0 X5TuUMaI01uh19I+gLGVxCy2jGSy9e1nemrHjpL4P0nD4SetZiPRyNnCruvBUPYcYp4tXC/Htw8w Wl0ObuVMFm6kcBhfX4Yzra62kC6xqGlKVgtLreUTUf1CyWnHhXKbTCzJ1VbKjMX5LzcTvvf9HuXR gPHJNKdgQU5hB+ZyK23zHztFL6w81c5zQp6m6P9TMfB3PtPWFCczVQtB9N4U2rp2HOA44NMz4y8A AAD//wMAUEsDBBQABgAIAAAAIQCntZFYwwAAANoAAAAPAAAAZHJzL2Rvd25yZXYueG1sRI9Ba8JA FITvgv9heYXedFMPoY2uIkVBEEpjPHh8zT6TxezbmF2T9N93C4Ueh5n5hlltRtuInjpvHCt4mScg iEunDVcKzsV+9grCB2SNjWNS8E0eNuvpZIWZdgPn1J9CJSKEfYYK6hDaTEpf1mTRz11LHL2r6yyG KLtK6g6HCLeNXCRJKi0ajgs1tvReU3k7PayC7YXznbl/fH3m19wUxVvCx/Sm1PPTuF2CCDSG//Bf +6AVpPB7Jd4Auf4BAAD//wMAUEsBAi0AFAAGAAgAAAAhANvh9svuAAAAhQEAABMAAAAAAAAAAAAA AAAAAAAAAFtDb250ZW50X1R5cGVzXS54bWxQSwECLQAUAAYACAAAACEAWvQsW78AAAAVAQAACwAA AAAAAAAAAAAAAAAfAQAAX3JlbHMvLnJlbHNQSwECLQAUAAYACAAAACEAp7WRWMMAAADaAAAADwAA AAAAAAAAAAAAAAAHAgAAZHJzL2Rvd25yZXYueG1sUEsFBgAAAAADAAMAtwAAAPcCAAAAAA== " filled="f" stroked="f">
+                  <v:textbox inset="0,0,0,0">
+                    <w:txbxContent>
+                      <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+                        <w:pPr>
+                          <w:spacing w:before="10"/>
+                          <w:ind w:left="20"/>
+                          <w:rPr>
+                            <w:i/>
+                            <w:sz w:val="24"/>
+                          </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                          <w:rPr>
+                            <w:i/>
+                            <w:sz w:val="24"/>
+                          </w:rPr>
+                          <w:t xml:space="preserve">Submitted </w:t>
+                        </w:r>
+                        <w:r>
+                          <w:rPr>
+                            <w:i/>
+                            <w:spacing w:val="-5"/>
+                            <w:sz w:val="24"/>
+                          </w:rPr>
+                          <w:t>by</w:t>
+                        </w:r>
+                      </w:p>
+                    </w:txbxContent>
+                  </v:textbox>
+                </v:shape>
+                <v:shape id="Textbox 7" o:spid="_x0000_s1030" type="#_x0000_t202" style="position:absolute;left:6817;top:23533;width:14230;height:4966;visibility:visible;mso-wrap-style:square;v-text-anchor:top" o:gfxdata="UEsDBBQABgAIAAAAIQDb4fbL7gAAAIUBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbHyQz07DMAyH 70i8Q+QralM4IITa7kDhCAiNB7ASt43WOlEcyvb2pNu4IODoPz9/n1xv9vOkForiPDdwXVagiI23 jocG3rdPxR0oScgWJ8/UwIEENu3lRb09BBKV0ywNjCmFe63FjDSjlD4Q50nv44wpl3HQAc0OB9I3 VXWrjedEnIq03oC27qjHjympx31un0wiTQLq4bS4shrAECZnMGVTvbD9QSnOhDInjzsyuiBXWQP0 r4R18jfgnHvJr4nOknrFmJ5xzhraRtHWf3Kkpfz/yGo5S+H73hkquyhdjr3R8m2lj09svwAAAP// AwBQSwMEFAAGAAgAAAAhAFr0LFu/AAAAFQEAAAsAAABfcmVscy8ucmVsc2zPwWrDMAwG4Ptg72B0 X5TuUMaI01uh19I+gLGVxCy2jGSy9e1nemrHjpL4P0nD4SetZiPRyNnCruvBUPYcYp4tXC/Htw8w Wl0ObuVMFm6kcBhfX4Yzra62kC6xqGlKVgtLreUTUf1CyWnHhXKbTCzJ1VbKjMX5LzcTvvf9HuXR gPHJNKdgQU5hB+ZyK23zHztFL6w81c5zQp6m6P9TMfB3PtPWFCczVQtB9N4U2rp2HOA44NMz4y8A AAD//wMAUEsDBBQABgAIAAAAIQDI+TTDwwAAANoAAAAPAAAAZHJzL2Rvd25yZXYueG1sRI9Ba8JA FITvBf/D8oTe6kYPto2uIqIgFMQYDx6f2WeymH0bs6vGf98VCj0OM/MNM513thZ3ar1xrGA4SEAQ F04bLhUc8vXHFwgfkDXWjknBkzzMZ723KabaPTij+z6UIkLYp6igCqFJpfRFRRb9wDXE0Tu71mKI si2lbvER4baWoyQZS4uG40KFDS0rKi77m1WwOHK2MtftaZedM5Pn3wn/jC9Kvfe7xQREoC78h//a G63gE15X4g2Qs18AAAD//wMAUEsBAi0AFAAGAAgAAAAhANvh9svuAAAAhQEAABMAAAAAAAAAAAAA AAAAAAAAAFtDb250ZW50X1R5cGVzXS54bWxQSwECLQAUAAYACAAAACEAWvQsW78AAAAVAQAACwAA AAAAAAAAAAAAAAAfAQAAX3JlbHMvLnJlbHNQSwECLQAUAAYACAAAACEAyPk0w8MAAADaAAAADwAA AAAAAAAAAAAAAAAHAgAAZHJzL2Rvd25yZXYueG1sUEsFBgAAAAADAAMAtwAAAPcCAAAAAA== " filled="f" stroked="f">
+                  <v:textbox inset="0,0,0,0">
+                    <w:txbxContent>
+                      <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+                        <w:pPr>
+                          <w:spacing w:before="10"/>
+                          <w:ind w:left="20"/>
+                          <w:rPr>
+                            <w:i/>
+                            <w:sz w:val="24"/>
+                          </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                          <w:rPr>
+                            <w:i/>
+                            <w:sz w:val="24"/>
+                          </w:rPr>
+                          <w:t xml:space="preserve">Under the guidance </w:t>
+                        </w:r>
+                        <w:r>
+                          <w:rPr>
+                            <w:i/>
+                            <w:spacing w:val="-5"/>
+                            <w:sz w:val="24"/>
+                          </w:rPr>
+                          <w:t>of</w:t>
+                        </w:r>
+                      </w:p>
+                      <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+                        <w:pPr>
+                          <w:spacing w:before="200"/>
+                          <w:ind w:left="102"/>
+                          <w:rPr>
+                            <w:b/>
+                            <w:sz w:val="24"/>
+                          </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                          <w:rPr>
+                            <w:b/>
+                            <w:sz w:val="24"/>
+                          </w:rPr>
+                          <w:t xml:space="preserve">Name of the </w:t>
+                        </w:r>
+                        <w:r>
+                          <w:rPr>
+                            <w:b/>
+                            <w:spacing w:val="-2"/>
+                            <w:sz w:val="24"/>
+                          </w:rPr>
+                          <w:t>Guide</w:t>
+                        </w:r>
+                      </w:p>
+                    </w:txbxContent>
+                  </v:textbox>
+                </v:shape>
+                <w10:wrap anchorx="page"/>
+              </v:group>
+            </w:pict>
+          </mc:Fallback>
+        </mc:AlternateContent>
+      </w:r>
+      <w:r>
+        <w:t>Design and Analysis of Algorithms–</w:t>
+      </w:r>
+      
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-9"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>CD343AI Experiential Learning (Lab)</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="151"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="0" w:type="auto"/>
+        <w:tblInd w:w="3637" w:type="dxa"/>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblCellMar>
+          <w:left w:w="0" w:type="dxa"/>
+          <w:right w:w="0" w:type="dxa"/>
+        </w:tblCellMar>
+        <w:tblLook w:val="01E0" w:firstRow="1" w:lastRow="1" w:firstColumn="1" w:lastColumn="1" w:noHBand="0" w:noVBand="0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="2015"/>
+        <w:gridCol w:w="1515"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00326853">
+        <w:trPr>
+          <w:trHeight w:val="408"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2015" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+            <w:pPr>
+              <w:pStyle w:val="TableParagraph"/>
+              <w:spacing w:before="0" w:line="266" w:lineRule="exact"/>
+              <w:ind w:left="50"/>
+              <w:rPr>
+                <w:b/>
+                <w:sz w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="24"/>
+                <w:highlight w:val="yellow"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Student </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FF0000"/>
+                <w:spacing w:val="-10"/>
+                <w:sz w:val="24"/>
+                <w:highlight w:val="yellow"/>
+              </w:rPr>
+              <w:t>1</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1515" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+            <w:pPr>
+              <w:pStyle w:val="TableParagraph"/>
+              <w:spacing w:before="0" w:line="266" w:lineRule="exact"/>
+              <w:ind w:right="47"/>
+              <w:jc w:val="right"/>
+              <w:rPr>
+                <w:b/>
+                <w:sz w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FF0000"/>
+                <w:spacing w:val="-5"/>
+                <w:sz w:val="24"/>
+                <w:highlight w:val="yellow"/>
+              </w:rPr>
+              <w:t>USN</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00326853">
+        <w:trPr>
+          <w:trHeight w:val="551"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2015" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+            <w:pPr>
+              <w:pStyle w:val="TableParagraph"/>
+              <w:ind w:left="50"/>
+              <w:rPr>
+                <w:b/>
+                <w:sz w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FF0000"/>
+                <w:sz w:val="24"/>
+                <w:highlight w:val="yellow"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Student </w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FF0000"/>
+                <w:spacing w:val="-10"/>
+                <w:sz w:val="24"/>
+              </w:rPr>
+              <w:t>2</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1515" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+            <w:pPr>
+              <w:pStyle w:val="TableParagraph"/>
+              <w:ind w:right="47"/>
+              <w:jc w:val="right"/>
+              <w:rPr>
+                <w:b/>
+                <w:sz w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FF0000"/>
+                <w:spacing w:val="-5"/>
+                <w:sz w:val="24"/>
+                <w:highlight w:val="yellow"/>
+              </w:rPr>
+              <w:t>USN</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00326853">
+        <w:trPr>
+          <w:trHeight w:val="551"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2015" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+            <w:pPr>
+              <w:pStyle w:val="TableParagraph"/>
+              <w:ind w:left="50"/>
+              <w:rPr>
+                <w:b/>
+                <w:sz w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1515" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+            <w:pPr>
+              <w:pStyle w:val="TableParagraph"/>
+              <w:ind w:right="47"/>
+              <w:jc w:val="right"/>
+              <w:rPr>
+                <w:b/>
+                <w:sz w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00326853">
+        <w:trPr>
+          <w:trHeight w:val="408"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2015" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+            <w:pPr>
+              <w:pStyle w:val="TableParagraph"/>
+              <w:spacing w:line="256" w:lineRule="exact"/>
+              <w:ind w:left="50"/>
+              <w:rPr>
+                <w:b/>
+                <w:sz w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1515" w:type="dxa"/>
+          </w:tcPr>
+          <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+            <w:pPr>
+              <w:pStyle w:val="TableParagraph"/>
+              <w:spacing w:line="256" w:lineRule="exact"/>
+              <w:ind w:right="47"/>
+              <w:jc w:val="right"/>
+              <w:rPr>
+                <w:b/>
+                <w:sz w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="169"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:left="2192" w:right="2356"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Affiliation</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="206"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+        <w:spacing w:before="1"/>
+        <w:ind w:left="2192" w:right="2293"/>
+        <w:jc w:val="center"/>
+      </w:pPr>
+      <w:r>
+        <w:t>In</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-3"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>partial</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>fulfilment</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>for</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>the</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-3"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>award</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>of</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>degree</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-5"/>
+        </w:rPr>
+        <w:t>of</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:spacing w:before="200"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Bachelor</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-5"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>of</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-5"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>Engineering</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="200"/>
+        <w:ind w:left="2205" w:right="2293"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-5"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>in</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:spacing w:before="200"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Department</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-7"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>of</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-7"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>Information</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-6"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>Science</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-7"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>and</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-6"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>Engineering</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="200"/>
+        <w:ind w:right="102"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>2025-</w:t>
+      </w:r>
+      
+      
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>2026</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:sectPr w:rsidR="00326853">
+          <w:footerReference w:type="default" r:id="rId10"/>
+          <w:type w:val="continuous"/>
+          <w:pgSz w:w="12240" w:h="15840"/>
+          <w:pgMar w:top="1060" w:right="360" w:bottom="1280" w:left="720" w:header="0" w:footer="1088" w:gutter="0"/>
+          <w:pgNumType w:start="1"/>
+          <w:cols w:space="720"/>
+        </w:sectPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:left="1996"/>
+        <w:rPr>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+        <w:lastRenderedPageBreak/>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="0" distR="0">
+            <wp:extent cx="4527883" cy="1852422"/>
+            <wp:effectExtent l="0" t="0" r="0" b="0"/>
+            <wp:docPr id="8" name="Picture 3"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="8" name="Image 8"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId11" cstate="print"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="4527883" cy="1852422"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="222"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="36"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>CERTIFICATE</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="18"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="36"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:ind w:left="720" w:right="823"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:anchor distT="0" distB="0" distL="0" distR="0" simplePos="0" relativeHeight="487455744" behindDoc="1" locked="0" layoutInCell="1" allowOverlap="1">
+            <wp:simplePos x="0" y="0"/>
+            <wp:positionH relativeFrom="page">
+              <wp:posOffset>2589847</wp:posOffset>
+            </wp:positionH>
+            <wp:positionV relativeFrom="paragraph">
+              <wp:posOffset>-59940</wp:posOffset>
+            </wp:positionV>
+            <wp:extent cx="2755900" cy="2743199"/>
+            <wp:effectExtent l="0" t="0" r="0" b="0"/>
+            <wp:wrapNone/>
+            <wp:docPr id="9" name="Picture 4"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="9" name="Image 9"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId8" cstate="print"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="2755900" cy="2743199"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:anchor>
+        </w:drawing>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Certified that the project work titled </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">&#x2018;Project Title&#x2019; </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">is carried out by </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Student Name (USN),</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="40"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Student Name (USN), and Student Name (USN) </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>who are bonafide students of RV College of Engineering,</w:t>
+      </w:r>
+      
+      
+      
+      
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="26"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Bengaluru, in partial fulfilment for the award of degree of </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Bachelor of Engineering in Information Science and Engineering </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">of the </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Visvesvaraya Technological University</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>, Belagavi during the academic year 2025-2026. It is certified that all corrections/suggestions indicated for the Internal Assessment have been incorporated in the report deposited in the departmental library. The report has been approved as it satisfies the academic requirements in respect of experiential learning work prescribed by the institution for the said degree.</w:t>
+      </w:r>
+      
+      
+      
+      
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="179"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="6479"/>
+          <w:tab w:val="left" w:pos="7679"/>
+        </w:tabs>
+        <w:spacing w:line="276" w:lineRule="auto"/>
+        <w:ind w:left="1080" w:right="876" w:hanging="360"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Signature of Guide</w:t>
+      <w:tab/><w:t>Signature</w:t></w:r>
+      
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-9"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>of</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-9"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Head</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-9"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>of</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-9"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>the</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-9"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Department Guide Name</w:t>
+      <w:tab/><w:tab/><w:t>Dr.</w:t></w:r>
+      
+      
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="40"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>G S Mamatha</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="166"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:right="1093"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>External</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Viva</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="5039"/>
+        </w:tabs>
+        <w:spacing w:before="241"/>
+        <w:ind w:right="1189"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Name of </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Examiners</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:tab/>
+        <w:t>Signature</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-5"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>with</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Date</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="242"/>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-10"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>1</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="241"/>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-10"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>2</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:sectPr w:rsidR="00326853">
+          <w:pgSz w:w="12240" w:h="15840"/>
+          <w:pgMar w:top="1380" w:right="360" w:bottom="1280" w:left="720" w:header="0" w:footer="1088" w:gutter="0"/>
+          <w:cols w:space="720"/>
+        </w:sectPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:left="1628"/>
+        <w:rPr>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+        <w:lastRenderedPageBreak/>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="0" distR="0">
+            <wp:extent cx="4982764" cy="2041017"/>
+            <wp:effectExtent l="0" t="0" r="0" b="0"/>
+            <wp:docPr id="10" name="Picture 5"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="10" name="Image 10"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId12" cstate="print"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="4982764" cy="2041017"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="57"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="32"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>DECLARATION</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="101"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="32"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="1" w:line="360" w:lineRule="auto"/>
+        <w:ind w:left="720" w:right="821"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:anchor distT="0" distB="0" distL="0" distR="0" simplePos="0" relativeHeight="487456256" behindDoc="1" locked="0" layoutInCell="1" allowOverlap="1">
+            <wp:simplePos x="0" y="0"/>
+            <wp:positionH relativeFrom="page">
+              <wp:posOffset>2589847</wp:posOffset>
+            </wp:positionH>
+            <wp:positionV relativeFrom="paragraph">
+              <wp:posOffset>18158</wp:posOffset>
+            </wp:positionV>
+            <wp:extent cx="2755900" cy="2743200"/>
+            <wp:effectExtent l="0" t="0" r="0" b="0"/>
+            <wp:wrapNone/>
+            <wp:docPr id="11" name="Picture 6"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="11" name="Image 11"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId8" cstate="print"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="2755900" cy="2743200"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:anchor>
+        </w:drawing>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>We</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">, Student Names, </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">students of Fourth semester B.E., department of Information Science Engineering, RV College of Engineering, Bengaluru, hereby declare that Experiential Learning (Lab) titled </w:t>
+      </w:r>
+      
+      
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">&#x2018;Project Title&#x2019; </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">has been carried out by us and submitted in partial fulfilment for the award of degree of </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Bachelor of Engineering </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>in</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="40"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Information Science and Engineering</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="40"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>during</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="80"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>the academic year 2025-26</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="137"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="1" w:line="360" w:lineRule="auto"/>
+        <w:ind w:left="720" w:right="827"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>We also declare that any Intellectual Property Rights generated out of this project carried out at RVCE will be the property of RV College of Engineering®, Bengaluru and we will be one of the authors of the same.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="4"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="4"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="4"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="20"/>
+        <w:rPr>
+          <w:sz w:val="4"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial MT"/>
+          <w:sz w:val="4"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial MT"/>
+          <w:spacing w:val="-10"/>
+          <w:w w:val="110"/>
+          <w:sz w:val="4"/>
+        </w:rPr>
+        <w:t>[</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="9"/>
+        <w:ind w:left="780"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Place: </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Bengaluru</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="83"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Date:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="7679"/>
+        </w:tabs>
+        <w:spacing w:before="138"/>
+        <w:ind w:left="1560"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Name</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:tab/>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Signature</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="138"/>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">1. </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">NAME 1 </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>(USN)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:sectPr w:rsidR="00326853">
+          <w:pgSz w:w="12240" w:h="15840"/>
+          <w:pgMar w:top="1180" w:right="360" w:bottom="1280" w:left="720" w:header="0" w:footer="1088" w:gutter="0"/>
+          <w:cols w:space="720"/>
+        </w:sectPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:spacing w:before="76"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:lastRenderedPageBreak/>
+        <w:t>Abstract</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="49"/>
+        <w:ind w:left="2193" w:right="2293"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>(One</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-3"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>page</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-3"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>only</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-3"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>with</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-3"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>4</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-3"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>paragraphs)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="96"/>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:line="276" w:lineRule="auto"/>
+        <w:ind w:left="737" w:right="838"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>This</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>page</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>should</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>highlight</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>the</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>significant</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>contributions</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>carried</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>out</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>in</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>the</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-4"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve">major </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>project</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="48"/>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:line="276" w:lineRule="auto"/>
+        <w:ind w:left="720" w:right="835"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>Paragraph</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>1:</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>should</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>include</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-7"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>the</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>introduction</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>to</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>topic,</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-7"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>work</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>done</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>in</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>the</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-7"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>field</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve">so far, </w:t>
+      </w:r>
+      
+      
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>propose</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-5"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>new</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>idea,</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-6"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-8"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>objectives.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="152"/>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00171C7B" w:rsidRPr="00171C7B" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:line="276" w:lineRule="auto"/>
+        <w:ind w:left="720" w:right="823"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:iCs/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>Paragraph</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-14"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>2</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-14"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> : </w:t>
+      </w:r>
+      
+      
+      
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>should</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-12"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve">include </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:iCs/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">DETAILED DESIGN AND JUSTIFICATION OF APPROPRIATE ALGORITHM AND OPERATIONS </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:iCs/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>USED</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="152"/>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00171C7B" w:rsidRPr="00171C7B" w:rsidRDefault="00000000" w:rsidP="00171C7B">
+      <w:pPr>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:anchor distT="0" distB="0" distL="0" distR="0" simplePos="0" relativeHeight="487456768" behindDoc="1" locked="0" layoutInCell="1" allowOverlap="1">
+            <wp:simplePos x="0" y="0"/>
+            <wp:positionH relativeFrom="page">
+              <wp:posOffset>2589847</wp:posOffset>
+            </wp:positionH>
+            <wp:positionV relativeFrom="paragraph">
+              <wp:posOffset>22713</wp:posOffset>
+            </wp:positionV>
+            <wp:extent cx="2755900" cy="2743200"/>
+            <wp:effectExtent l="0" t="0" r="0" b="0"/>
+            <wp:wrapNone/>
+            <wp:docPr id="12" name="Picture 7"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="12" name="Image 12"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId8" cstate="print"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="2755900" cy="2743200"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:anchor>
+        </w:drawing>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Paragraph 3: should include the </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>PROTOTYPE DEVELOPMENT AND OUTCOME</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="152"/>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:line="276" w:lineRule="auto"/>
+        <w:ind w:left="720" w:right="822"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:w w:val="90"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Paragraph 4: should include conclusions drawn and the directions for the future </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>work.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="109"/>
+        <w:rPr>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:left="2193" w:right="2293"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="19"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-10"/>
+          <w:w w:val="105"/>
+          <w:sz w:val="19"/>
+        </w:rPr>
+        <w:t>I</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="19"/>
+        </w:rPr>
+        <w:sectPr w:rsidR="00326853">
+          <w:pgSz w:w="12240" w:h="15840"/>
+          <w:pgMar w:top="760" w:right="360" w:bottom="1280" w:left="720" w:header="0" w:footer="1088" w:gutter="0"/>
+          <w:cols w:space="720"/>
+        </w:sectPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:spacing w:before="127"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-10"/>
+        </w:rPr>
+        <w:lastRenderedPageBreak/>
+        <w:t>Table</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-3"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-10"/>
+        </w:rPr>
+        <w:t>of</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-3"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:smallCaps/>
+          <w:spacing w:val="-10"/>
+        </w:rPr>
+        <w:t>Contents</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="48"/>
+        <w:ind w:left="8742" w:right="102"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:smallCaps/>
+          <w:w w:val="90"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Page</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:smallCaps/>
+          <w:spacing w:val="15"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:smallCaps/>
+          <w:spacing w:val="-5"/>
+          <w:w w:val="95"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>No</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="136"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9832"/>
+        </w:tabs>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Abstract</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:tab/>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-10"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>I</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="83"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Chapter 1: </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Introduction</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="1439"/>
+        </w:tabs>
+        <w:ind w:left="1439" w:hanging="359"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial"/>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Overview</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>of</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-1"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>the</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-1"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>problem</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>statement</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-1"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>or</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-1"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>case</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-1"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>study,</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="BodyText"/>
+        <w:spacing w:before="42"/>
+        <w:ind w:left="1500"/>
+      </w:pPr>
+      <w:r>
+        <w:t>its</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>significance</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-1"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>and</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-1"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>the</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-1"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>objectives</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-1"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>of</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-1"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>the</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-1"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:t>proposed</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-1"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>solution.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="82"/>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="1"/>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Chapter 2: Solution </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Design</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="1439"/>
+          <w:tab w:val="left" w:pos="1500"/>
+        </w:tabs>
+        <w:spacing w:line="276" w:lineRule="auto"/>
+        <w:ind w:right="3630" w:hanging="420"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial"/>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial"/>
+          <w:i/>
+          <w:noProof/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:anchor distT="0" distB="0" distL="0" distR="0" simplePos="0" relativeHeight="487457280" behindDoc="1" locked="0" layoutInCell="1" allowOverlap="1">
+            <wp:simplePos x="0" y="0"/>
+            <wp:positionH relativeFrom="page">
+              <wp:posOffset>2589847</wp:posOffset>
+            </wp:positionH>
+            <wp:positionV relativeFrom="paragraph">
+              <wp:posOffset>316662</wp:posOffset>
+            </wp:positionV>
+            <wp:extent cx="2755900" cy="2743200"/>
+            <wp:effectExtent l="0" t="0" r="0" b="0"/>
+            <wp:wrapNone/>
+            <wp:docPr id="13" name="Picture 8"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="13" name="Image 13"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId8" cstate="print"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="2755900" cy="2743200"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:anchor>
+        </w:drawing>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Detailed design of the proposed solution which should include System</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-14"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Design/</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-14"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Architecture</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-14"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>representing</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-14"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>the</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-14"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>proposed</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-14"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>system.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRPr="0049221A" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="Heading4"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="1439"/>
+        </w:tabs>
+        <w:ind w:left="1439" w:hanging="359"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="0"/>
+          <w:bCs w:val="0"/>
+          <w:color w:val="FF0000"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b w:val="0"/>
+          <w:bCs w:val="0"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Selection and justification of appropriate algorithm and operations </w:t>
+      </w:r>
+      
+      
+      <w:r>
+        <w:rPr>
+          <w:b w:val="0"/>
+          <w:bCs w:val="0"/>
+          <w:spacing w:val="-2"/>
+        </w:rPr>
+        <w:t>used.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRPr="0049221A" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="82"/>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="1"/>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Chapter 3: Implementation </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Details.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="1439"/>
+        </w:tabs>
+        <w:ind w:left="1439" w:hanging="359"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial"/>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Description of the implementation </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>approach.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="1440"/>
+        </w:tabs>
+        <w:spacing w:before="42" w:line="276" w:lineRule="auto"/>
+        <w:ind w:left="1440" w:right="3720"/>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial"/>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Use</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-11"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>of</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-11"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>coding</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-11"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>best</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-11"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>practices</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-11"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>including</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-11"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>modularity,</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:spacing w:val="-11"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>readability, and maintainability.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="41"/>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Chapter 4: </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Prototype Development</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="009B0593" w:rsidRDefault="009B0593" w:rsidP="009B0593">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Approach: Describe the overall approach and strategy for tackling the problem.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="009B0593" w:rsidRPr="009B0593" w:rsidRDefault="009B0593" w:rsidP="009B0593">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:ind w:left="1440" w:firstLine="0"/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> Include any theoretical frameworks or models used. </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="009B0593" w:rsidRPr="009B0593" w:rsidRDefault="009B0593" w:rsidP="009B0593">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Procedures: Detail the specific procedures and steps taken to solve the problem.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="009B0593" w:rsidRPr="009B0593" w:rsidRDefault="009B0593" w:rsidP="009B0593">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="1439"/>
+        </w:tabs>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial"/>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="004C2FE8" w:rsidRPr="005D2F64" w:rsidRDefault="00000000" w:rsidP="005D2F64">
+      <w:pPr>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Chapter</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-1"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>5:</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-1"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> Expected outcome </w:t>
+      </w:r>
+      
+      
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>could include:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="004C2FE8" w:rsidRPr="00C05CB3" w:rsidRDefault="004C2FE8" w:rsidP="004C2FE8">
+      <w:pPr>
+        <w:widowControl/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+        <w:autoSpaceDE/>
+        <w:autoSpaceDN/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Development of a functional prototype (hardware and/or software)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="004C2FE8" w:rsidRPr="00C05CB3" w:rsidRDefault="004C2FE8" w:rsidP="004C2FE8">
+      <w:pPr>
+        <w:widowControl/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+        <w:autoSpaceDE/>
+        <w:autoSpaceDN/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Improvement in system performance, efficiency, or usability</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="004C2FE8" w:rsidRPr="00C05CB3" w:rsidRDefault="004C2FE8" w:rsidP="004C2FE8">
+      <w:pPr>
+        <w:widowControl/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+        <w:autoSpaceDE/>
+        <w:autoSpaceDN/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Technical innovation or novel solutions to real-world problems</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="004C2FE8" w:rsidRPr="00C05CB3" w:rsidRDefault="004C2FE8" w:rsidP="004C2FE8">
+      <w:pPr>
+        <w:widowControl/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+        <w:autoSpaceDE/>
+        <w:autoSpaceDN/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Societal, environmental, or industrial impact</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="004C2FE8" w:rsidRPr="00C05CB3" w:rsidRDefault="004C2FE8" w:rsidP="004C2FE8">
+      <w:pPr>
+        <w:widowControl/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+        <w:autoSpaceDE/>
+        <w:autoSpaceDN/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Contribution to academic or professional knowledge through:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="004C2FE8" w:rsidRPr="00C05CB3" w:rsidRDefault="004C2FE8" w:rsidP="004C2FE8">
+      <w:pPr>
+        <w:widowControl/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+        <w:autoSpaceDE/>
+        <w:autoSpaceDN/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t>Enabling further research, entrepreneurship, or implementation at scale</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="004C2FE8" w:rsidP="005D2F64">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:widowControl/>
+        <w:autoSpaceDE/>
+        <w:autoSpaceDN/>
+        <w:spacing w:before="0"/>
+        <w:ind w:left="720" w:firstLine="0"/>
+        <w:contextualSpacing/>
+        <w:jc w:val="both"/>
+        <w:rPr>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:hAnsi="Arial"/>
+          <w:i/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">          </w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:left="720"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>References:</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:spacing w:val="-1"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Include</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-1"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>the Papers,</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-1"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>articles, books</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-1"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>referred in</w:t>
+      </w:r>
+      
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-1"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">IEEE </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:spacing w:val="-2"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>format.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="83"/>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:line="288" w:lineRule="auto"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:sectPr w:rsidR="00326853">
+          <w:footerReference w:type="default" r:id="rId13"/>
+          <w:pgSz w:w="12240" w:h="15840"/>
+          <w:pgMar w:top="1820" w:right="360" w:bottom="280" w:left="720" w:header="0" w:footer="0" w:gutter="0"/>
+          <w:cols w:space="720"/>
+        </w:sectPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00326853">
+      <w:pPr>
+        <w:spacing w:before="162"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00326853" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:ind w:left="3230"/>
+        <w:rPr>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="0" distR="0">
+            <wp:extent cx="2749010" cy="2736342"/>
+            <wp:effectExtent l="0" t="0" r="0" b="0"/>
+            <wp:docPr id="14" name="Picture 9"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="14" name="Image 14"/>
+                    <pic:cNvPicPr/>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId8" cstate="print"/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr>
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="2749010" cy="2736342"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:sectPr w:rsidR="00326853">
+      <w:footerReference w:type="default" r:id="rId14"/>
+      <w:pgSz w:w="12240" w:h="15840"/>
+      <w:pgMar w:top="1820" w:right="360" w:bottom="280" w:left="720" w:header="0" w:footer="0" w:gutter="0"/>
+      <w:cols w:space="720"/>
+    </w:sectPr>
+  </w:body>
+</w:document>

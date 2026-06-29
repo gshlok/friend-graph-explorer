@@ -228,4 +228,137 @@
   .node-pulse {
     animation: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
+
+  /* ===================================================================== */
+  /* Sci-fi / hacker visualizer FX                                          */
+  /* ===================================================================== */
+
+  /* CRT scanline overlay (apply to a positioned container) */
+  .crt-scanlines::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 30;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) 0px,
+      rgba(0, 0, 0, 0) 2px,
+      rgba(0, 0, 0, 0.22) 3px,
+      rgba(0, 0, 0, 0) 4px
+    );
+    background-size: 100% 4px;
+    animation: scanMove 6s linear infinite;
+    opacity: 0.5;
+  }
+
+  @keyframes scanMove {
+    from { background-position: 0 0; }
+    to { background-position: 0 240px; }
+  }
+
+  /* A single sweeping bright scanline */
+  .crt-beam::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 120px;
+    pointer-events: none;
+    z-index: 31;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      hsl(174 72% 60% / 0.06) 45%,
+      hsl(174 72% 70% / 0.12) 50%,
+      hsl(174 72% 60% / 0.06) 55%,
+      transparent 100%
+    );
+    animation: beamSweep 7s ease-in-out infinite;
+  }
+
+  @keyframes beamSweep {
+    0% { top: -140px; }
+    100% { top: 100%; }
+  }
+
+  .crt-vignette::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 29;
+    background: radial-gradient(ellipse at center, transparent 52%, rgba(0, 0, 0, 0.55) 100%);
+  }
+
+  /* Glitch text — set data-text="..." on the element */
+  .glitch {
+    position: relative;
+    display: inline-block;
+  }
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .glitch::before {
+    color: hsl(15 90% 65%);
+    clip-path: inset(0 0 62% 0);
+    animation: glitchTop 3.1s infinite steps(1);
+    opacity: 0.55;
+  }
+  .glitch::after {
+    color: hsl(174 72% 55%);
+    clip-path: inset(58% 0 0 0);
+    animation: glitchBot 2.6s infinite steps(1);
+    opacity: 0.55;
+  }
+  @keyframes glitchTop {
+    0%, 92%, 100% { transform: translate(0, 0); }
+    93% { transform: translate(2px, -1px); }
+    95% { transform: translate(-2px, 1px); }
+    97% { transform: translate(1px, 0); }
+  }
+  @keyframes glitchBot {
+    0%, 90%, 100% { transform: translate(0, 0); }
+    91% { transform: translate(-2px, 1px); }
+    94% { transform: translate(2px, -1px); }
+    96% { transform: translate(-1px, 0); }
+  }
+
+  /* Terminal feed line entrance */
+  .terminal-line {
+    animation: termIn 0.18s ease-out both;
+  }
+  @keyframes termIn {
+    from { opacity: 0; transform: translateX(-6px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  /* Soft neon flicker for HUD chrome */
+  .animate-flicker {
+    animation: neonFlicker 4s infinite;
+  }
+  @keyframes neonFlicker {
+    0%, 100% { opacity: 1; }
+    92% { opacity: 1; }
+    93% { opacity: 0.6; }
+    94% { opacity: 1; }
+    96% { opacity: 0.75; }
+    97% { opacity: 1; }
+  }
+
+  /* Blinking caret */
+  .blink-caret {
+    animation: blinkCaret 1s steps(1) infinite;
+  }
+  @keyframes blinkCaret {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
 }
