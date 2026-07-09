@@ -4,6 +4,13 @@
 export interface User {
   id: string;
   name: string;
+  // Optional presentation metadata (used by the personalized "Discover" mode).
+  // Existing code that only reads id/name is unaffected.
+  handle?: string;
+  avatarUrl?: string | null;
+  verified?: boolean;
+  isCenter?: boolean; // the real, ingested profile at the core of the graph
+  stylized?: boolean; // an anonymous / modeled neighbour (not a real identity)
 }
 
 export interface FriendRecommendation {
@@ -27,10 +34,11 @@ export class SocialGraph {
     this.users = new Map();
   }
 
-  // Add a new user (node) to the graph
-  addUser(name: string): User {
+  // Add a new user (node) to the graph. Optional metadata lets the
+  // personalized "Discover" mode attach avatars / handles / flags.
+  addUser(name: string, meta?: Partial<Omit<User, "id" | "name">>): User {
     const id = crypto.randomUUID();
-    const user: User = { id, name };
+    const user: User = { id, name, ...meta };
     this.users.set(id, user);
     this.adjacencyList.set(id, new Set());
     return user;

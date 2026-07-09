@@ -3,28 +3,17 @@ import { useGraph } from '@/context/GraphContext';
 import { User } from '@/lib/graph';
 import { Users, GitBranch, Network } from 'lucide-react';
 
-interface NodePosition {
-  id: string;
-  x: number;
-  y: number;
-  vx: number;
-  vy: number;
-}
-
-const NODE_RADIUS = 24;
-const SELECTED_NODE_RADIUS = 32;
-const REPULSION = 3000;
-const ATTRACTION = 0.02;
-const DAMPING = 0.85;
-const CENTER_PULL = 0.01;
+const NODE_RADIUS = 16;
+const FRIEND_NODE_RADIUS = 20;
+const REC_NODE_RADIUS = 15;
+const SELECTED_NODE_RADIUS = 42;
 
 type ViewMode = 'full' | 'focused';
 type AnimationPhase = 'idle' | 'selecting' | 'traversing-friends' | 'traversing-recommendations';
 
 export function GraphVisualization() {
   const { users, edges, selectedUserId, friends, recommendations, selectUser } = useGraph();
-  const [positions, setPositions] = useState<Map<string, NodePosition>>(new Map());
-  const [dimensions, setDimensions] = useState({ width: 800, height: 700 });
+  const [dimensions] = useState({ width: 920, height: 760 });
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
   const [viewMode] = useState<ViewMode>('focused');
   const [animationPhase, setAnimationPhase] = useState<AnimationPhase>('idle');
@@ -57,40 +46,57 @@ export function GraphVisualization() {
     });
   }, [selectedUserId, friends, recommendations, edges]);
 
-  // Initialize positions for new nodes
-  useEffect(() => {
-    setPositions((prev) => {
-      const next = new Map(prev);
-      const centerX = dimensions.width / 2;
-      const centerY = dimensions.height / 2;
-      
-      users.forEach((user, index) => {
-        if (!next.has(user.id)) {
-          // Distribute nodes in a circular layout
-          const totalUsers = users.length;
-          const angle = (index / totalUsers) * Math.PI * 2;
-          const radius = Math.min(dimensions.width, dimensions.height) * 0.3;
-          
-          next.set(user.id, {
-            id: user.id,
-            x: centerX + Math.cos(angle) * radius,
-            y: centerY + Math.sin(angle) * radius,
-            vx: 0,
-            vy: 0,
-          });
-        }
+  // Concentric "ego network" layout: the selected user sits at the centre,
+  // their direct friends form an inner ring, recommendations an outer ring,
+  // and everyone else a dim outermost ring. Recomputed on selection change.
+  const { positions, guide } = useMemo(() => {
+    const map = new Map<string, { x: number; y: number }>();
+    const cx = dimensions.width / 2;
+    const cy = dimensions.height / 2;
+    const minDim = Math.min(dimensions.width, dimensions.height);
+
+    if (!selectedUserId) {
+      // No focus: even circle.
+      const r = minDim * 0.4;
+      users.forEach((u, i) => {
+        const a = (i / Math.max(1, users.length)) * Math.PI * 2 - Math.PI / 2;
+        map.set(u.id, { x: cx + Math.cos(a) * r, y: cy + Math.sin(a) * r });
       });
-      
-      // Remove positions for deleted users
-      for (const id of next.keys()) {
-        if (!users.find(u => u.id === id)) {
-          next.delete(id);
-        }
-      }
-      
-      return next;
+      return { positions: map, guide: null as null | { cx: number; cy: number; r1: number; r2: number } };
+    }
+
+    const friendIds = friends.map((f) => f.id);
+    const recIds = recommendations.map((r) => r.user.id);
+    const friendSet = new Set(friendIds);
+    const recSet = new Set(recIds);
+
+    const r1 = minDim * 0.24; // friends ring
+    const r2 = minDim * 0.42; // recommendations ring
+    const r3 = minDim * 0.49; // everyone else
+
+    map.set(selectedUserId, { x: cx, y: cy });
+
+    friendIds.forEach((id, i) => {
+      const a = (i / Math.max(1, friendIds.length)) * Math.PI * 2 - Math.PI / 2;
+      map.set(id, { x: cx + Math.cos(a) * r1, y: cy + Math.sin(a) * r1 });
     });
-  }, [users, dimensions]);
+
+    recIds.forEach((id, i) => {
+      // slight offset so outer nodes don't line up radially with inner ones
+      const a = (i / Math.max(1, recIds.length)) * Math.PI * 2 - Math.PI / 2 + 0.12;
+      map.set(id, { x: cx + Math.cos(a) * r2, y: cy + Math.sin(a) * r2 });
+    });
+
+    const others = users.filter(
+      (u) => u.id !== selectedUserId && !friendSet.has(u.id) && !recSet.has(u.id)
+    );
+    others.forEach((u, i) => {
+      const a = (i / Math.max(1, others.length)) * Math.PI * 2;
+      map.set(u.id, { x: cx + Math.cos(a) * r3, y: cy + Math.sin(a) * r3 });
+    });
+
+    return { positions: map, guide: { cx, cy, r1, r2 } };
+  }, [users, selectedUserId, friends, recommendations, dimensions]);
 
   // Animate edge flow offsets continuously
   useEffect(() => {
@@ -197,8 +203,11 @@ export function GraphVisualization() {
 
   // Get node radius
   const getNodeRadius = useCallback((userId: string) => {
-    return userId === selectedUserId ? SELECTED_NODE_RADIUS : NODE_RADIUS;
-  }, [selectedUserId]);
+    if (userId === selectedUserId) return SELECTED_NODE_RADIUS;
+    if (friends.some(f => f.id === userId)) return FRIEND_NODE_RADIUS;
+    if (recommendations.some(r => r.user.id === userId)) return REC_NODE_RADIUS;
+    return NODE_RADIUS;
+  }, [selectedUserId, friends, recommendations]);
 
   // Get edge visibility
   const getEdgeOpacity = useCallback((from: string, to: string) => {
@@ -400,6 +409,56 @@ export function GraphVisualization() {
           </defs>
           <rect width="100%" height="100%" fill="url(#grid)" />
 
+          {/* Concentric guide rings — make the ego-network structure legible */}
+          {guide && (
+            <g className="pointer-events-none">
+              <circle
+                cx={guide.cx}
+                cy={guide.cy}
+                r={guide.r1}
+                fill="none"
+                stroke="hsl(var(--node-friend))"
+                strokeWidth={1}
+                strokeDasharray="2,6"
+                opacity={0.25}
+              />
+              <circle
+                cx={guide.cx}
+                cy={guide.cy}
+                r={guide.r2}
+                fill="none"
+                stroke="hsl(var(--node-recommended))"
+                strokeWidth={1}
+                strokeDasharray="2,6"
+                opacity={0.2}
+              />
+              <text
+                x={guide.cx}
+                y={guide.cy - guide.r1 - 8}
+                textAnchor="middle"
+                fill="hsl(var(--node-friend))"
+                fontSize="10"
+                fontWeight="600"
+                opacity={0.5}
+                className="uppercase tracking-widest"
+              >
+                Friends
+              </text>
+              <text
+                x={guide.cx}
+                y={guide.cy - guide.r2 - 8}
+                textAnchor="middle"
+                fill="hsl(var(--node-recommended))"
+                fontSize="10"
+                fontWeight="600"
+                opacity={0.45}
+                className="uppercase tracking-widest"
+              >
+                Recommended
+              </text>
+            </g>
+          )}
+
           {/* Edges */}
           {edges.map(({ from, to }) => {
             const posFrom = positions.get(from);
@@ -517,19 +576,39 @@ export function GraphVisualization() {
                     filter: isHovered ? 'brightness(1.2)' : 'none',
                   }}
                 />
-                
-                {/* Label */}
-                <text
-                  textAnchor="middle"
-                  dy="0.35em"
-                  fill="hsl(var(--primary-foreground))"
-                  fontSize={isSelected ? 14 : 12}
-                  fontWeight="600"
-                  className="pointer-events-none select-none"
-                >
-                  {user.name.slice(0, 2)}
-                </text>
-                
+
+                {/* Real avatar on nodes that have one (the centre profile) */}
+                {user.avatarUrl ? (
+                  <>
+                    <clipPath id={`avatar-clip-${user.id}`}>
+                      <circle r={nodeRadius - 2} />
+                    </clipPath>
+                    <image
+                      href={user.avatarUrl}
+                      x={-(nodeRadius - 2)}
+                      y={-(nodeRadius - 2)}
+                      width={(nodeRadius - 2) * 2}
+                      height={(nodeRadius - 2) * 2}
+                      clipPath={`url(#avatar-clip-${user.id})`}
+                      preserveAspectRatio="xMidYMid slice"
+                      className="pointer-events-none"
+                    />
+                  </>
+                ) : (
+                  <text
+                    textAnchor="middle"
+                    dy="0.35em"
+                    fill="hsl(var(--primary-foreground))"
+                    fontSize={isSelected ? 16 : Math.max(9, nodeRadius * 0.8)}
+                    fontWeight="700"
+                    className="pointer-events-none select-none"
+                  >
+                    {user.stylized
+                      ? (user.name.match(/\d+/)?.[0] ?? '')
+                      : user.name.slice(0, 2).toUpperCase()}
+                  </text>
+                )}
+
                 {/* Full name on hover with animated background */}
                 {isHovered && (
                   <g className="animate-fade-in-scale">

@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GraphProvider } from "@/context/GraphContext";
 import { AppLayout } from "@/components/AppLayout";
 import Home from "./pages/Home";
+import Discover from "./pages/Discover";
 import AddUser from "./pages/AddUser";
 import AdjacencyMatrix from "./pages/AdjacencyMatrix";
 import Benchmark from "./pages/Benchmark";
@@ -25,6 +26,7 @@ const App = () => (
           <AppLayout>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/discover" element={<Discover />} />
               <Route path="/add-user" element={<AddUser />} />
               <Route path="/adjacency-matrix" element={<AdjacencyMatrix />} />
               <Route path="/benchmark" element={<Benchmark />} />
